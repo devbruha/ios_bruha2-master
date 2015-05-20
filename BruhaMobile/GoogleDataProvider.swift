@@ -12,7 +12,10 @@ import CoreLocation
 
 class GoogleDataProvider {
     
+    //let apiKey = "AIzaSyDIIXjK8U6lSrVQIsJHJD9w72kMi-zdkyQ"
     let apiKey = "AIzaSyDWPbYMQPFcbFg4yWO-4Rk1Rn9DiaUOn34"
+    
+    //let apiKey = "AIzaSyDWPbYMQPFcbFg4yWO-4Rk1Rn9DiaUOn34"
     var photoCache = [String:UIImage]()
     var placesTask = NSURLSessionDataTask()
     var session: NSURLSession {
@@ -21,6 +24,9 @@ class GoogleDataProvider {
     
     func fetchPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, types:[String], completion: (([GooglePlace]) -> Void)) -> ()
     {
+        print(types)
+        print(radius)
+    
         var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=\(apiKey)&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true"
         let typesString = types.count > 0 ? join("|", types) : "food"
         urlString += "&types=\(typesString)"
@@ -82,6 +88,7 @@ class GoogleDataProvider {
     
     func fetchPhotoFromReference(reference: String, completion: ((UIImage?) -> Void)) -> ()
     {
+        println("reference: " + reference)
         if let photo = photoCache[reference] as UIImage! {
             completion(photo)
         } else {
