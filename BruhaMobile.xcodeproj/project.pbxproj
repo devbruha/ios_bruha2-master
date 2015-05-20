@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A3E823D1AFAFC4800A18926 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E823C1AFAFC4800A18926 /* GoogleMaps.framework */; };
+		0A3E82411AFAFC9A00A18926 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82401AFAFC9A00A18926 /* AVFoundation.framework */; };
+		0A3E82431AFAFCA200A18926 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82421AFAFCA200A18926 /* CoreData.framework */; };
+		0A3E82451AFAFCAB00A18926 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82441AFAFCAB00A18926 /* CoreLocation.framework */; };
+		0A3E82471AFAFCB400A18926 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82461AFAFCB400A18926 /* CoreText.framework */; };
+		0A3E82491AFAFCBC00A18926 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82481AFAFCBC00A18926 /* GLKit.framework */; };
+		0A3E824B1AFAFCC300A18926 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E824A1AFAFCC300A18926 /* ImageIO.framework */; };
+		0A3E824D1AFAFCCD00A18926 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E824C1AFAFCCD00A18926 /* libc++.dylib */; };
+		0A3E824F1AFAFCDA00A18926 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E824E1AFAFCDA00A18926 /* libicucore.dylib */; };
+		0A3E82511AFAFCE200A18926 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82501AFAFCE200A18926 /* libz.dylib */; };
+		0A3E82531AFAFCE800A18926 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82521AFAFCE800A18926 /* OpenGLES.framework */; };
+		0A3E82551AFAFCF000A18926 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82541AFAFCF000A18926 /* QuartzCore.framework */; };
+		0A3E82571AFAFCF600A18926 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3E82561AFAFCF600A18926 /* SystemConfiguration.framework */; };
+		0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D50C81AF9987600E295F0 /* MapViewController.swift */; };
+		0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */; };
+		0AB9B4821AF84B7E006A5A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9B4811AF84B7E006A5A6C /* AppDelegate.swift */; };
+		0AB9B4851AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */; };
+		0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9B4861AF84B7E006A5A6C /* SplashViewController.swift */; };
+		0AB9B48A1AF84B7E006A5A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9B4881AF84B7E006A5A6C /* Main.storyboard */; };
+		0AB9B48C1AF84B7E006A5A6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */; };
+		0AB9B48F1AF84B7E006A5A6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */; };
+		0AB9B49B1AF84B7F006A5A6C /* BruhaMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9B49A1AF84B7F006A5A6C /* BruhaMobileTests.swift */; };
+		0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */; };
+		0AED9C5F1AF98E4900EC9AF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED9C5E1AF98E4900EC9AF9 /* ListViewController.swift */; };
+		0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */; };
+		0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A91B0042F300437ED6 /* GooglePlace.swift */; };
+		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
+		18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCC1B0B827500779957 /* TypesTableViewController.swift */; };
+		18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCE1B0B829B00779957 /* PlaceMarker.swift */; };
+		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
+		18929BD31B0B82DC00779957 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18929BD21B0B82DC00779957 /* MarkerInfoView.xib */; };
+		18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD41B0B82E300779957 /* UIViewExtension.swift */; };
+		18C651401B0B814300DEB6FD /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C6513F1B0B814300DEB6FD /* GoogleMaps.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AB9B4951AF84B7E006A5A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AB9B4741AF84B7E006A5A6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB9B47B1AF84B7E006A5A6C;
+			remoteInfo = BruhaMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A3E823C1AFAFC4800A18926 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = BruhaMobile/GoogleMaps.framework; sourceTree = "<group>"; };
+		0A3E82401AFAFC9A00A18926 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0A3E82421AFAFCA200A18926 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A3E82441AFAFCAB00A18926 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A3E82461AFAFCB400A18926 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0A3E82481AFAFCBC00A18926 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0A3E824A1AFAFCC300A18926 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0A3E824C1AFAFCCD00A18926 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0A3E824E1AFAFCDA00A18926 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		0A3E82501AFAFCE200A18926 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0A3E82521AFAFCE800A18926 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0A3E82541AFAFCF000A18926 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0A3E82561AFAFCF600A18926 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A3E82591AFAFE0400A18926 /* BruhaMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BruhaMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A8D50C81AF9987600E295F0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPopUpViewController.swift; sourceTree = "<group>"; };
+		0AB9B47C1AF84B7E006A5A6C /* BruhaMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BruhaMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB9B4801AF84B7E006A5A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB9B4811AF84B7E006A5A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AB9B4841AF84B7E006A5A6C /* BruhaMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BruhaMobile.xcdatamodel; sourceTree = "<group>"; };
+		0AB9B4861AF84B7E006A5A6C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0AB9B4891AF84B7E006A5A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0AB9B48E1AF84B7E006A5A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0AB9B4941AF84B7E006A5A6C /* BruhaMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BruhaMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB9B4991AF84B7F006A5A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB9B49A1AF84B7F006A5A6C /* BruhaMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruhaMobileTests.swift; sourceTree = "<group>"; };
+		0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0AED9C5E1AF98E4900EC9AF9 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		0AF091A91B0042F300437ED6 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		18929BCC1B0B827500779957 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
+		18929BCE1B0B829B00779957 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		18929BD21B0B82DC00779957 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		18929BD41B0B82E300779957 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		18C6513F1B0B814300DEB6FD /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AB9B4791AF84B7E006A5A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3E82571AFAFCF600A18926 /* SystemConfiguration.framework in Frameworks */,
+				0A3E82551AFAFCF000A18926 /* QuartzCore.framework in Frameworks */,
+				0A3E82531AFAFCE800A18926 /* OpenGLES.framework in Frameworks */,
+				0A3E82511AFAFCE200A18926 /* libz.dylib in Frameworks */,
+				0A3E824F1AFAFCDA00A18926 /* libicucore.dylib in Frameworks */,
+				0A3E824D1AFAFCCD00A18926 /* libc++.dylib in Frameworks */,
+				0A3E824B1AFAFCC300A18926 /* ImageIO.framework in Frameworks */,
+				0A3E82491AFAFCBC00A18926 /* GLKit.framework in Frameworks */,
+				0A3E82471AFAFCB400A18926 /* CoreText.framework in Frameworks */,
+				0A3E82451AFAFCAB00A18926 /* CoreLocation.framework in Frameworks */,
+				0A3E82431AFAFCA200A18926 /* CoreData.framework in Frameworks */,
+				0A3E82411AFAFC9A00A18926 /* AVFoundation.framework in Frameworks */,
+				0A3E823D1AFAFC4800A18926 /* GoogleMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB9B4911AF84B7E006A5A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A3E82581AFAFD0500A18926 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C6513F1B0B814300DEB6FD /* GoogleMaps.bundle */,
+				0A3E823C1AFAFC4800A18926 /* GoogleMaps.framework */,
+				0A3E82541AFAFCF000A18926 /* QuartzCore.framework */,
+				0A3E82521AFAFCE800A18926 /* OpenGLES.framework */,
+				0A3E82501AFAFCE200A18926 /* libz.dylib */,
+				0A3E824E1AFAFCDA00A18926 /* libicucore.dylib */,
+				0A3E824C1AFAFCCD00A18926 /* libc++.dylib */,
+				0A3E824A1AFAFCC300A18926 /* ImageIO.framework */,
+				0A3E82481AFAFCBC00A18926 /* GLKit.framework */,
+				0A3E82461AFAFCB400A18926 /* CoreText.framework */,
+				0A3E82441AFAFCAB00A18926 /* CoreLocation.framework */,
+				0A3E82421AFAFCA200A18926 /* CoreData.framework */,
+				0A3E82401AFAFC9A00A18926 /* AVFoundation.framework */,
+				0A3E82561AFAFCF600A18926 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AB9B4731AF84B7E006A5A6C = {
+			isa = PBXGroup;
+			children = (
+				0AB9B47E1AF84B7E006A5A6C /* BruhaMobile */,
+				0AB9B4971AF84B7F006A5A6C /* BruhaMobileTests */,
+				0AB9B47D1AF84B7E006A5A6C /* Products */,
+				0A3E82581AFAFD0500A18926 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AB9B47D1AF84B7E006A5A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B47C1AF84B7E006A5A6C /* BruhaMobile.app */,
+				0AB9B4941AF84B7E006A5A6C /* BruhaMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AB9B47E1AF84B7E006A5A6C /* BruhaMobile */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B4811AF84B7E006A5A6C /* AppDelegate.swift */,
+				0AB9B4861AF84B7E006A5A6C /* SplashViewController.swift */,
+				0AED9C5E1AF98E4900EC9AF9 /* ListViewController.swift */,
+				0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */,
+				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
+				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
+				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
+				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
+				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
+				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
+				18929BCB1B0B821C00779957 /* GoogleMaps */,
+				0AB9B47F1AF84B7E006A5A6C /* Supporting Files */,
+			);
+			path = BruhaMobile;
+			sourceTree = "<group>";
+		};
+		0AB9B47F1AF84B7E006A5A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B4801AF84B7E006A5A6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AB9B4971AF84B7F006A5A6C /* BruhaMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B49A1AF84B7F006A5A6C /* BruhaMobileTests.swift */,
+				0AB9B4981AF84B7F006A5A6C /* Supporting Files */,
+			);
+			path = BruhaMobileTests;
+			sourceTree = "<group>";
+		};
+		0AB9B4981AF84B7F006A5A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B4991AF84B7F006A5A6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18929BCB1B0B821C00779957 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				0A8D50C81AF9987600E295F0 /* MapViewController.swift */,
+				18929BCC1B0B827500779957 /* TypesTableViewController.swift */,
+				18929BCE1B0B829B00779957 /* PlaceMarker.swift */,
+				0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */,
+				0A3E82591AFAFE0400A18926 /* BruhaMobile-Bridging-Header.h */,
+				0AF091A91B0042F300437ED6 /* GooglePlace.swift */,
+				18929BD01B0B82D200779957 /* MarkerInfoView.swift */,
+				18929BD21B0B82DC00779957 /* MarkerInfoView.xib */,
+				18929BD41B0B82E300779957 /* UIViewExtension.swift */,
+			);
+			name = GoogleMaps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AB9B47B1AF84B7E006A5A6C /* BruhaMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB9B49E1AF84B7F006A5A6C /* Build configuration list for PBXNativeTarget "BruhaMobile" */;
+			buildPhases = (
+				0AB9B4781AF84B7E006A5A6C /* Sources */,
+				0AB9B4791AF84B7E006A5A6C /* Frameworks */,
+				0AB9B47A1AF84B7E006A5A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BruhaMobile;
+			productName = BruhaMobile;
+			productReference = 0AB9B47C1AF84B7E006A5A6C /* BruhaMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AB9B4931AF84B7E006A5A6C /* BruhaMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB9B4A11AF84B7F006A5A6C /* Build configuration list for PBXNativeTarget "BruhaMobileTests" */;
+			buildPhases = (
+				0AB9B4901AF84B7E006A5A6C /* Sources */,
+				0AB9B4911AF84B7E006A5A6C /* Frameworks */,
+				0AB9B4921AF84B7E006A5A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB9B4961AF84B7E006A5A6C /* PBXTargetDependency */,
+			);
+			name = BruhaMobileTests;
+			productName = BruhaMobileTests;
+			productReference = 0AB9B4941AF84B7E006A5A6C /* BruhaMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AB9B4741AF84B7E006A5A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Bruha;
+				TargetAttributes = {
+					0AB9B47B1AF84B7E006A5A6C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					0AB9B4931AF84B7E006A5A6C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 0AB9B47B1AF84B7E006A5A6C;
+					};
+				};
+			};
+			buildConfigurationList = 0AB9B4771AF84B7E006A5A6C /* Build configuration list for PBXProject "BruhaMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AB9B4731AF84B7E006A5A6C;
+			productRefGroup = 0AB9B47D1AF84B7E006A5A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AB9B47B1AF84B7E006A5A6C /* BruhaMobile */,
+				0AB9B4931AF84B7E006A5A6C /* BruhaMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AB9B47A1AF84B7E006A5A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB9B48A1AF84B7E006A5A6C /* Main.storyboard in Resources */,
+				0AB9B48F1AF84B7E006A5A6C /* LaunchScreen.xib in Resources */,
+				18929BD31B0B82DC00779957 /* MarkerInfoView.xib in Resources */,
+				0AB9B48C1AF84B7E006A5A6C /* Images.xcassets in Resources */,
+				18C651401B0B814300DEB6FD /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB9B4921AF84B7E006A5A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AB9B4781AF84B7E006A5A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
+				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
+				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
+				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
+				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
+				18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */,
+				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
+				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
+				0AED9C5F1AF98E4900EC9AF9 /* ListViewController.swift in Sources */,
+				0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */,
+				0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */,
+				0AB9B4851AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld in Sources */,
+				0AB9B4821AF84B7E006A5A6C /* AppDelegate.swift in Sources */,
+				0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB9B4901AF84B7E006A5A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB9B49B1AF84B7F006A5A6C /* BruhaMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AB9B4961AF84B7E006A5A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AB9B47B1AF84B7E006A5A6C /* BruhaMobile */;
+			targetProxy = 0AB9B4951AF84B7E006A5A6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AB9B4881AF84B7E006A5A6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB9B4891AF84B7E006A5A6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB9B48E1AF84B7E006A5A6C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AB9B49C1AF84B7F006A5A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AB9B49D1AF84B7F006A5A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				New_Setting = "";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AB9B49F1AF84B7F006A5A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Kevin/Downloads/GoogleMaps-iOS-1.9.2/GoogleMapsSDKDemos",
+					"$(PROJECT_DIR)/BruhaMobile",
+				);
+				INFOPLIST_FILE = BruhaMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BruhaMobile/BruhaMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AB9B4A01AF84B7F006A5A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Kevin/Downloads/GoogleMaps-iOS-1.9.2/GoogleMapsSDKDemos",
+					"$(PROJECT_DIR)/BruhaMobile",
+				);
+				INFOPLIST_FILE = BruhaMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BruhaMobile/BruhaMobile-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		0AB9B4A21AF84B7F006A5A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BruhaMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BruhaMobile.app/BruhaMobile";
+			};
+			name = Debug;
+		};
+		0AB9B4A31AF84B7F006A5A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BruhaMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BruhaMobile.app/BruhaMobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AB9B4771AF84B7E006A5A6C /* Build configuration list for PBXProject "BruhaMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB9B49C1AF84B7F006A5A6C /* Debug */,
+				0AB9B49D1AF84B7F006A5A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB9B49E1AF84B7F006A5A6C /* Build configuration list for PBXNativeTarget "BruhaMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB9B49F1AF84B7F006A5A6C /* Debug */,
+				0AB9B4A01AF84B7F006A5A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB9B4A11AF84B7F006A5A6C /* Build configuration list for PBXNativeTarget "BruhaMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB9B4A21AF84B7F006A5A6C /* Debug */,
+				0AB9B4A31AF84B7F006A5A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AB9B4841AF84B7E006A5A6C /* BruhaMobile.xcdatamodel */,
+			);
+			currentVersion = 0AB9B4841AF84B7E006A5A6C /* BruhaMobile.xcdatamodel */;
+			path = BruhaMobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0AB9B4741AF84B7E006A5A6C /* Project object */;
+}

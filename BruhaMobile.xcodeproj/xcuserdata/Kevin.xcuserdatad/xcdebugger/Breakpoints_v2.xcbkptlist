@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BruhaMobile/SplashViewController.swift"
+            timestampString = "453176596.284933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SplashViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.usernameText.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177188.854599"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.usernameText.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177188.854996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.init (BruhaMobile.SplashViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; BruhaMobile.SplashViewController"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177188.855292"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.init (BruhaMobile.SplashViewController.Type)() -&gt; BruhaMobile.SplashViewController"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177188.855533"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.init (BruhaMobile.SplashViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; BruhaMobile.SplashViewController"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177188.855772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BruhaMobile/SplashViewController.swift"
+            timestampString = "453176597.291453"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "SplashViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BruhaMobile/SplashViewController.swift"
+            timestampString = "453177212.454186"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "SplashViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.usernameText.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177212.456739"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.usernameText.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177212.457056"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.usernameText.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177212.457378"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.init (BruhaMobile.SplashViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; BruhaMobile.SplashViewController"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177212.457639"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.init (BruhaMobile.SplashViewController.Type)() -&gt; BruhaMobile.SplashViewController"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177212.457905"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BruhaMobile.SplashViewController.init (BruhaMobile.SplashViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; BruhaMobile.SplashViewController"
+                  moduleName = "BruhaMobile"
+                  urlString = "file:///Users/Kevin/Documents/BruhaMobile/BruhaMobile/SplashViewController.swift"
+                  timestampString = "453177212.45816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

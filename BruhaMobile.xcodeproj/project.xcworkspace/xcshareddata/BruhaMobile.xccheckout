@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>78B0BDFD-9BD5-4038-9429-BEAC75B68555</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BruhaMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>902C0E3296319E25F3EA9CC96B35F93191DC47FC</key>
+		<string>https://github.com/Txdixy/BruhaMobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BruhaMobile.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>902C0E3296319E25F3EA9CC96B35F93191DC47FC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Txdixy/BruhaMobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>902C0E3296319E25F3EA9CC96B35F93191DC47FC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>902C0E3296319E25F3EA9CC96B35F93191DC47FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BruhaMobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>
