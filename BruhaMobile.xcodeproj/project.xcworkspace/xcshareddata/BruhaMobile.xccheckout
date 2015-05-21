@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>78B0BDFD-9BD5-4038-9429-BEAC75B68555</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BruhaMobile</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>09D4B1F8BC57AB24BC44ACD61D3A1BCA71B69E70</key>
 		<string>https://github.com/devbruha/ios_bruha2-master.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BruhaMobile.xcodeproj/project.xcworkspace</string>
+	<string>BruhaMobile.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>09D4B1F8BC57AB24BC44ACD61D3A1BCA71B69E70</key>

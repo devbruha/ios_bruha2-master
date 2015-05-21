@@ -34,7 +34,7 @@ class ListViewController: UIViewController {
     }
     
     @IBAction func ScrollPages(sender: AnyObject) {
-        performSegueWithIdentifier("scrollPages", sender: sender)
+        performSegueWithIdentifier("scrollPages", sender: self)
     }
     
     override func viewDidLoad() {

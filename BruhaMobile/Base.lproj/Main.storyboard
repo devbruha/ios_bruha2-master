@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xT-Rb-Lrl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xT-Rb-Lrl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -427,7 +427,7 @@
                                         </state>
                                         <connections>
                                             <action selector="ScrollPages:" destination="6dU-vZ-Eoy" eventType="touchUpInside" id="TeS-zb-mHd"/>
-                                            <segue destination="Aq0-4V-HOR" kind="push" id="mem-sP-9ca"/>
+                                            <segue destination="Aq0-4V-HOR" kind="modal" identifier="scrollPages" id="mem-sP-9ca"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -469,7 +469,7 @@
                 </screenEdgePanGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="XVQ-F1-3Pm"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="286"/>
+            <point key="canvasLocation" x="1052" y="168"/>
         </scene>
         <!--More Info View Controller-->
         <scene sceneID="uZi-Vz-7fj">
@@ -487,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgO-ia-EeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1455" y="286"/>
+            <point key="canvasLocation" x="1459" y="698"/>
         </scene>
         <!--Scroll Pages-->
         <scene sceneID="0qs-eN-niO">
@@ -560,7 +560,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-hN-28x">
                                         <rect key="frame" x="139" y="291" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -617,8 +617,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wUO-i9-fp1"/>
-        <segue reference="0AV-0n-xtz"/>
+        <segue reference="PIQ-R1-qL7"/>
         <segue reference="4V0-aw-eRE"/>
+        <segue reference="0AV-0n-xtz"/>
     </inferredMetricsTieBreakers>
 </document>
