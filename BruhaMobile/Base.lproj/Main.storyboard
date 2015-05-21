@@ -232,9 +232,6 @@
                                     <segment title="List"/>
                                     <segment title="Map"/>
                                 </segments>
-                                <connections>
-                                    <action selector="indexChanged:" destination="uBt-GY-R42" eventType="valueChanged" id="pYH-SD-XUg"/>
-                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhU-9e-PPy" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="48" width="320" height="512"/>
@@ -423,8 +420,22 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTn-h6-m5f">
+                                        <rect key="frame" x="123" y="246" width="86" height="30"/>
+                                        <state key="normal" title="Scroll Pages">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ScrollPages:" destination="6dU-vZ-Eoy" eventType="touchUpInside" id="TeS-zb-mHd"/>
+                                            <segue destination="Aq0-4V-HOR" kind="push" id="mem-sP-9ca"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="GTn-h6-m5f" secondAttribute="centerY" constant="-0.5" id="1Is-KM-V6G"/>
+                                    <constraint firstAttribute="centerX" secondItem="GTn-h6-m5f" secondAttribute="centerX" constant="0.5" id="DQE-7v-VIL"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="XVQ-F1-3Pm" appends="YES" id="5if-iS-kb2"/>
                                 </connections>
@@ -456,11 +467,7 @@
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="ZPg-Iu-EtP">
                     <rectEdge key="edges" bottom="YES"/>
                 </screenEdgePanGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="XVQ-F1-3Pm">
-                    <connections>
-                        <segue destination="Xav-3J-SCf" kind="modal" id="mhG-Yg-4ry"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="XVQ-F1-3Pm"/>
             </objects>
             <point key="canvasLocation" x="1106" y="286"/>
         </scene>
@@ -480,54 +487,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgO-ia-EeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="439"/>
+            <point key="canvasLocation" x="1455" y="286"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zJH-uw-5l2">
+        <!--Scroll Pages-->
+        <scene sceneID="0qs-eN-niO">
             <objects>
-                <viewController id="Xav-3J-SCf" sceneMemberID="viewController">
+                <viewController id="Aq0-4V-HOR" customClass="ScrollPages" customModule="BruhaMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4tn-VP-t6T"/>
-                        <viewControllerLayoutGuide type="bottom" id="voO-Ha-G94"/>
+                        <viewControllerLayoutGuide type="top" id="TX9-y1-fzz"/>
+                        <viewControllerLayoutGuide type="bottom" id="niH-kE-fod"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nqs-Jf-plJ">
+                    <view key="view" contentMode="scaleToFill" id="qsO-q4-YEt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpL-Nj-C7p">
-                                <rect key="frame" x="0.0" y="292" width="320" height="276"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0N-Ej-tBF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="292"/>
-                                <color key="backgroundColor" red="0.2901960784" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-kg-7I7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="agP-RK-CHe">
+                                        <rect key="frame" x="141" y="531" width="39" height="37"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Aq0-4V-HOR" id="Jm6-fr-bAS"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="voO-Ha-G94" firstAttribute="top" secondItem="TpL-Nj-C7p" secondAttribute="bottom" id="FSd-7Z-XYH"/>
-                            <constraint firstItem="TpL-Nj-C7p" firstAttribute="top" secondItem="Nqs-Jf-plJ" secondAttribute="top" constant="292" id="KaB-4c-vQP"/>
-                            <constraint firstItem="TpL-Nj-C7p" firstAttribute="top" secondItem="b0N-Ej-tBF" secondAttribute="bottom" id="VxE-ej-PSS"/>
-                            <constraint firstItem="TpL-Nj-C7p" firstAttribute="leading" secondItem="Nqs-Jf-plJ" secondAttribute="leading" id="WQf-Qt-TnM"/>
-                            <constraint firstAttribute="trailing" secondItem="TpL-Nj-C7p" secondAttribute="trailing" id="a6Q-eB-O9h"/>
-                            <constraint firstAttribute="trailing" secondItem="b0N-Ej-tBF" secondAttribute="trailing" id="g3M-Zf-cev"/>
-                            <constraint firstItem="b0N-Ej-tBF" firstAttribute="top" secondItem="Nqs-Jf-plJ" secondAttribute="top" id="jZS-Q0-Ek2"/>
-                            <constraint firstItem="b0N-Ej-tBF" firstAttribute="leading" secondItem="Nqs-Jf-plJ" secondAttribute="leading" id="uJo-Fg-QjJ"/>
-                        </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="nrp-el-fE6" appends="YES" id="A26-CM-dXa"/>
-                        </connections>
                     </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJT-Id-jFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="down" id="nrp-el-fE6">
+                    <navigationItem key="navigationItem" id="s9h-9T-fmg"/>
                     <connections>
-                        <segue destination="6dU-vZ-Eoy" kind="modal" id="3JS-Ce-Uor"/>
+                        <outlet property="pageControl" destination="agP-RK-CHe" id="e6D-kQ-wBS"/>
+                        <outlet property="scrollView" destination="yRN-kg-7I7" id="21L-4r-Hsq"/>
                     </connections>
-                </swipeGestureRecognizer>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VK-qp-BKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="237"/>
+            <point key="canvasLocation" x="1855" y="286"/>
         </scene>
         <!--MenuViewController-->
         <scene sceneID="uJb-Nh-AZX">
@@ -556,6 +554,21 @@
                                 <rect key="frame" x="16" y="56" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-Ps-he2">
+                                <rect key="frame" x="0.0" y="239" width="320" height="329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-hN-28x">
+                                        <rect key="frame" x="139" y="291" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81404194078947367" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Tuk-TG-kf2" id="SPj-oL-tdh"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -566,13 +579,14 @@
                     </view>
                     <connections>
                         <outlet property="segmentedControl" destination="RFB-aj-9Ev" id="mKH-PH-ejA"/>
+                        <outlet property="singlePageScroll" destination="mdq-Ps-he2" id="uRn-7e-ohb"/>
                         <segue destination="uBt-GY-R42" kind="modal" identifier="GoToMap" id="HVd-jj-Xuh"/>
                         <segue destination="6dU-vZ-Eoy" kind="modal" identifier="GoToList" id="PIQ-R1-qL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1C-xb-URA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58.666666666666664" y="1120.853333333333"/>
+            <point key="canvasLocation" x="58" y="1120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tB6-Zr-weK">
@@ -603,8 +617,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0AV-0n-xtz"/>
         <segue reference="wUO-i9-fp1"/>
-        <segue reference="eef-Jf-qGK"/>
+        <segue reference="0AV-0n-xtz"/>
+        <segue reference="4V0-aw-eRE"/>
     </inferredMetricsTieBreakers>
 </document>

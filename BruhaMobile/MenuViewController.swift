@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var singlePageScroll: UIScrollView!
     @IBOutlet var segmentedControl: UISegmentedControl!
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
@@ -28,6 +29,7 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        singlePageScroll.contentSize.height = 1000
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +37,7 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

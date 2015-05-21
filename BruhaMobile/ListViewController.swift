@@ -33,6 +33,10 @@ class ListViewController: UIViewController {
         self.performSegueWithIdentifier("GoToMenu", sender: self)
     }
     
+    @IBAction func ScrollPages(sender: AnyObject) {
+        performSegueWithIdentifier("scrollPages", sender: sender)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
