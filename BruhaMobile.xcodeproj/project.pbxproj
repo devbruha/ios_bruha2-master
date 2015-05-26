@@ -34,6 +34,10 @@
 		0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */; };
 		0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A91B0042F300437ED6 /* GooglePlace.swift */; };
 		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
+		18873F2F1B13BCDB005E9FD2 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F2E1B13BCDB005E9FD2 /* BaseTableViewCell.swift */; };
+		18873F311B13BCE1005E9FD2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F301B13BCE1005E9FD2 /* StringExtension.swift */; };
+		18873F331B13BCE8005E9FD2 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F321B13BCE8005E9FD2 /* UITableViewExtension.swift */; };
+		18873F351B13BCEF005E9FD2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F341B13BCEF005E9FD2 /* UIViewControllerExtension.swift */; };
 		18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCC1B0B827500779957 /* TypesTableViewController.swift */; };
 		18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCE1B0B829B00779957 /* PlaceMarker.swift */; };
 		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
@@ -41,6 +45,9 @@
 		18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD41B0B82E300779957 /* UIViewExtension.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
+		18D58E591B14EB8300B937CF /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E581B14EB8300B937CF /* SlideMenuController.swift */; };
+		18D58E5B1B14EB9000B937CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E5A1B14EB9000B937CF /* MainViewController.swift */; };
+		18D58E5D1B14EB9E00B937CF /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E5C1B14EB9E00B937CF /* BottomViewController.swift */; };
 		18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */; };
 		18EBBCF41B0E621A00E59FF1 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EBBCEE1B0E621A00E59FF1 /* photo1.png */; };
 		18EBBCF51B0E621A00E59FF1 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EBBCEF1B0E621A00E59FF1 /* photo2.png */; };
@@ -93,6 +100,10 @@
 		0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		0AF091A91B0042F300437ED6 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		18873F2E1B13BCDB005E9FD2 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		18873F301B13BCE1005E9FD2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		18873F321B13BCE8005E9FD2 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		18873F341B13BCEF005E9FD2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		18929BCC1B0B827500779957 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		18929BCE1B0B829B00779957 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
@@ -100,6 +111,9 @@
 		18929BD41B0B82E300779957 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		18D58E581B14EB8300B937CF /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		18D58E5A1B14EB9000B937CF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18D58E5C1B14EB9E00B937CF /* BottomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 		18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPages.swift; sourceTree = "<group>"; };
 		18EBBCEE1B0E621A00E59FF1 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
 		18EBBCEF1B0E621A00E59FF1 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
@@ -196,6 +210,7 @@
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
 				18929BCB1B0B821C00779957 /* GoogleMaps */,
+				18873F271B13B74F005E9FD2 /* SlideMenu */,
 				0AB9B47F1AF84B7E006A5A6C /* Supporting Files */,
 			);
 			path = BruhaMobile;
@@ -224,6 +239,20 @@
 				0AB9B4991AF84B7F006A5A6C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18873F271B13B74F005E9FD2 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				18D58E581B14EB8300B937CF /* SlideMenuController.swift */,
+				18D58E5A1B14EB9000B937CF /* MainViewController.swift */,
+				18D58E5C1B14EB9E00B937CF /* BottomViewController.swift */,
+				18873F2E1B13BCDB005E9FD2 /* BaseTableViewCell.swift */,
+				18873F301B13BCE1005E9FD2 /* StringExtension.swift */,
+				18873F321B13BCE8005E9FD2 /* UITableViewExtension.swift */,
+				18873F341B13BCEF005E9FD2 /* UIViewControllerExtension.swift */,
+			);
+			name = SlideMenu;
 			sourceTree = "<group>";
 		};
 		18929BCB1B0B821C00779957 /* GoogleMaps */ = {
@@ -365,12 +394,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
+				18D58E5B1B14EB9000B937CF /* MainViewController.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
+				18D58E591B14EB8300B937CF /* SlideMenuController.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
+				18873F331B13BCE8005E9FD2 /* UITableViewExtension.swift in Sources */,
+				18873F351B13BCEF005E9FD2 /* UIViewControllerExtension.swift in Sources */,
+				18D58E5D1B14EB9E00B937CF /* BottomViewController.swift in Sources */,
 				18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */,
 				18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */,
+				18873F311B13BCE1005E9FD2 /* StringExtension.swift in Sources */,
+				18873F2F1B13BCDB005E9FD2 /* BaseTableViewCell.swift in Sources */,
 				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
 				0AED9C5F1AF98E4900EC9AF9 /* ListViewController.swift in Sources */,
