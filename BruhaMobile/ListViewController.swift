@@ -10,18 +10,21 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+    @IBOutlet weak var ExploreImageView: UIImageView!
     @IBOutlet var segmentedControl: UISegmentedControl!
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex{
         case 0:
-            self.performSegueWithIdentifier("GoToMenu", sender: self);
+            self.performSegueWithIdentifier("GoToMenu", sender: self)
+            break
         case 1:
-            break;
+            break
         case 2:
-            self.performSegueWithIdentifier("GoToMap", sender: self);
+            self.performSegueWithIdentifier("GoToMap", sender: self)
+            break
         default:
-            break;
+            break
         }
     }
     
@@ -37,15 +40,25 @@ class ListViewController: UIViewController {
         performSegueWithIdentifier("scrollPages", sender: self)
     }
     
+    func imageTapped(){
+
+        self.performSegueWithIdentifier("GoToMap", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var tgr = UITapGestureRecognizer(target:self , action: Selector("imageTapped"))
+        ExploreImageView.addGestureRecognizer(tgr)
+        ExploreImageView.userInteractionEnabled = true
         screenEdgeREcognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
         screenEdgeREcognizer.edges = .Left
         view.addGestureRecognizer(screenEdgeREcognizer)
 
         // Do any additional setup after loading the view.
     }
+    
+
     
     
 

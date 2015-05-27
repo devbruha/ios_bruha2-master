@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xT-Rb-Lrl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tuk-TG-kf2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -337,10 +337,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYI-Ip-16J">
-                                <rect key="frame" x="54" y="46" width="110" height="130"/>
-                                <color key="backgroundColor" red="1" green="0.29284646879999998" blue="0.45427080199999997" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOw-8x-6YH">
                                 <rect key="frame" x="194" y="46" width="110" height="130"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -411,6 +407,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="Explore" translatesAutoresizingMaskIntoConstraints="NO" id="EYI-Ip-16J">
+                                <rect key="frame" x="54" y="46" width="110" height="130"/>
+                                <color key="backgroundColor" red="1" green="0.29284646879999998" blue="0.45427080199999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -433,13 +433,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="PjH-k0-DN2"/>
                     <connections>
+                        <outlet property="ExploreImageView" destination="EYI-Ip-16J" id="16d-Rt-aiu"/>
                         <segue destination="uBt-GY-R42" kind="modal" identifier="GoToMap" id="0AV-0n-xtz"/>
                         <segue destination="Tuk-TG-kf2" kind="modal" identifier="GoToMenu" id="4V0-aw-eRE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gv-HL-7jr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="52"/>
+            <point key="canvasLocation" x="1382" y="-96"/>
         </scene>
         <!--More Info View Controller-->
         <scene sceneID="uZi-Vz-7fj">
@@ -488,7 +489,7 @@
         <!--Main View Controller-->
         <scene sceneID="JbA-vh-AdL">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="pIf-kU-qU3" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="pIf-kU-qU3" customClass="MainViewController" customModule="BruhaMobile" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qU6-1t-IvX"/>
                         <viewControllerLayoutGuide type="bottom" id="c2r-ey-Rsf"/>
@@ -639,8 +640,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lKu-R2-90R"/>
-        <segue reference="0AV-0n-xtz"/>
-        <segue reference="4V0-aw-eRE"/>
+        <segue reference="HVd-jj-Xuh"/>
+        <segue reference="eef-Jf-qGK"/>
+        <segue reference="wUO-i9-fp1"/>
     </inferredMetricsTieBreakers>
 </document>
