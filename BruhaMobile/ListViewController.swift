@@ -28,7 +28,7 @@ class ListViewController: UIViewController {
         }
     }
     
-    var screenEdgeREcognizer: UIScreenEdgePanGestureRecognizer!
+    var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
 
     
     
@@ -36,13 +36,10 @@ class ListViewController: UIViewController {
         self.performSegueWithIdentifier("GoToMenu", sender: self)
     }
     
-    @IBAction func ScrollPages(sender: AnyObject) {
-        performSegueWithIdentifier("scrollPages", sender: self)
-    }
     
     func imageTapped(){
 
-        self.performSegueWithIdentifier("GoToMap", sender: self)
+        self.performSegueWithIdentifier("ExploreDetails", sender: self)
         
     }
     
@@ -51,9 +48,9 @@ class ListViewController: UIViewController {
         var tgr = UITapGestureRecognizer(target:self , action: Selector("imageTapped"))
         ExploreImageView.addGestureRecognizer(tgr)
         ExploreImageView.userInteractionEnabled = true
-        screenEdgeREcognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
-        screenEdgeREcognizer.edges = .Left
-        view.addGestureRecognizer(screenEdgeREcognizer)
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+        screenEdgeRecognizer.edges = .Left
+        view.addGestureRecognizer(screenEdgeRecognizer)
 
         // Do any additional setup after loading the view.
     }

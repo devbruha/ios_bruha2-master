@@ -43,6 +43,7 @@
 		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
 		18929BD31B0B82DC00779957 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18929BD21B0B82DC00779957 /* MarkerInfoView.xib */; };
 		18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD41B0B82E300779957 /* UIViewExtension.swift */; };
+		189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B2FB91B162FFB00E3EBFA /* ExploreController.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
 		18D58E591B14EB8300B937CF /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D58E581B14EB8300B937CF /* SlideMenuController.swift */; };
@@ -109,6 +110,7 @@
 		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 		18929BD21B0B82DC00779957 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		18929BD41B0B82E300779957 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		189B2FB91B162FFB00E3EBFA /* ExploreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		18D58E581B14EB8300B937CF /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */,
+				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
@@ -398,6 +401,7 @@
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
+				189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */,
 				18D58E591B14EB8300B937CF /* SlideMenuController.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
 				18873F331B13BCE8005E9FD2 /* UITableViewExtension.swift in Sources */,

@@ -73,20 +73,7 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         fetchNearbyPlaces(mapView.camera.target)
     }
     
-    @IBAction func mapTypeSegmentPressed(sender: AnyObject) {
     
-        let segmentedControl = sender as! UISegmentedControl
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            mapView.mapType = kGMSTypeNormal
-        case 1:
-            mapView.mapType = kGMSTypeSatellite
-        case 2:
-            mapView.mapType = kGMSTypeHybrid
-        default:
-            mapView.mapType = mapView.mapType
-        }
-    }
 
     func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
         
@@ -146,9 +133,7 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
             }
         }
     }
-    @IBAction func refreshPlaces(sender: AnyObject) {
-            fetchNearbyPlaces(mapView.camera.target)
-    }
+    
     func mapView(mapview: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
         // 1
         let placeMarker = marker as! PlaceMarker
