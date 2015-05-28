@@ -10,6 +10,7 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+
     @IBOutlet weak var ExploreImageView: UIImageView!
     @IBOutlet var segmentedControl: UISegmentedControl!
     
@@ -39,7 +40,10 @@ class ListViewController: UIViewController {
     
     func imageTapped(){
 
+        
+        
         self.performSegueWithIdentifier("ExploreDetails", sender: self)
+        
         
     }
     

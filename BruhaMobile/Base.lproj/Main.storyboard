@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tuk-TG-kf2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tuk-TG-kf2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -450,10 +450,133 @@
             </objects>
             <point key="canvasLocation" x="1022" y="-235"/>
         </scene>
+        <!--Right View Controller-->
+        <scene sceneID="7tq-RS-tc2">
+            <objects>
+                <viewController storyboardIdentifier="RightViewController" id="KQh-pm-GCn" customClass="RightViewController" customModule="BruhaMobile" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="REM-dI-fD8"/>
+                        <viewControllerLayoutGuide type="bottom" id="wlI-i9-NHt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gjg-HD-lTj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-If-4au">
+                                <rect key="frame" x="16" y="114" width="220" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Preview">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyz-tx-hJS">
+                                <rect key="frame" x="50" y="157" width="220" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="More Info">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xJ-fI-qOt">
+                                <rect key="frame" x="63" y="74" width="220" height="40"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Buy Ticket">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyTicket" destination="3xJ-fI-qOt" id="RrX-Vn-ZzP"/>
+                        <outlet property="moreInfo" destination="oyz-tx-hJS" id="aja-Xq-Oqm"/>
+                        <outlet property="preview" destination="b5Y-If-4au" id="8zw-j9-fpp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AsS-8x-2vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-924"/>
+        </scene>
+        <!--Java View Controller-->
+        <scene sceneID="YmQ-OB-5Jg">
+            <objects>
+                <viewController id="Tcf-qb-jZZ" customClass="JavaViewController" customModule="BruhaMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7sW-Hk-rHk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qbn-mm-qdL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KhH-Vu-C5m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="En4-0N-WLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="-898"/>
+        </scene>
+        <!--Swift View Controller-->
+        <scene sceneID="1HB-8U-hLa">
+            <objects>
+                <viewController id="T5T-ET-ovX" customClass="SwiftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e1Z-dE-rRu"/>
+                        <viewControllerLayoutGuide type="bottom" id="J55-LR-dak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iOa-25-zIw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLG-6t-3or" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526" y="-898"/>
+        </scene>
+        <!--Go View Controller-->
+        <scene sceneID="nkU-l4-Tbw">
+            <objects>
+                <viewController id="dbt-k7-3uZ" customClass="GoViewController" customModule="BruhaMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eft-Xo-F7s"/>
+                        <viewControllerLayoutGuide type="bottom" id="8n7-1e-97R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oGD-Oe-q6V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBa-Fa-ahi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2867" y="-898"/>
+        </scene>
+        <!--Non Menu Controller-->
+        <scene sceneID="tFF-z6-EdJ">
+            <objects>
+                <viewController id="amw-oo-H99" customClass="NonMenuController" customModule="BruhaMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hXX-VG-yrI"/>
+                        <viewControllerLayoutGuide type="bottom" id="IEK-no-9Yb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vTa-yp-o1t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHo-QA-hRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3211" y="-898"/>
+        </scene>
         <!--Explore Controller-->
         <scene sceneID="Iqg-1c-fV9">
             <objects>
-                <viewController id="mN4-1Y-zBn" customClass="ExploreController" customModule="BruhaMobile" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="mN4-1Y-zBn" customClass="ExploreController" customModule="BruhaMobile" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8MU-sv-abj"/>
                         <viewControllerLayoutGuide type="bottom" id="trF-PV-TB2"/>
@@ -462,66 +585,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mb4-CA-NYT">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mb4-CA-NYT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YoV-ut-OXN">
-                                        <rect key="frame" x="0.0" y="285" width="320" height="283"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="283" id="7j3-q4-4nc"/>
-                                            <constraint firstAttribute="width" constant="320" id="wRg-QH-M1i"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epM-UJ-b99">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.73314144739999998" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21e-sV-flv">
-                                        <rect key="frame" x="247" y="8" width="46" height="30"/>
-                                        <state key="normal" title="Map">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="uBt-GY-R42" kind="modal" id="SK4-bd-3mc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7a-Wj-9jW">
-                                        <rect key="frame" x="76" y="8" width="79" height="30"/>
-                                        <state key="normal" title="Notification">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clf-ci-LXD">
+                                        <rect key="frame" x="10" y="10" width="46" height="30"/>
+                                        <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVm-By-z0T">
-                                        <rect key="frame" x="8" y="8" width="46" height="30"/>
-                                        <state key="normal" title="Bruha">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IIp-gD-F5u">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="283"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="7nF-M1-sLa"/>
-                                            <constraint firstAttribute="height" constant="283" id="FIQ-Ur-YNm"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5c-5a-H77">
+                                        <rect key="frame" x="0.0" y="402" width="375" height="350"/>
+                                        <color key="backgroundColor" red="0.82236426770000004" green="0.82236426770000004" blue="0.82236426770000004" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="IIp-gD-F5u" secondAttribute="trailing" id="26c-f2-84z"/>
-                                    <constraint firstItem="YoV-ut-OXN" firstAttribute="leading" secondItem="mb4-CA-NYT" secondAttribute="leading" id="7Hg-sj-TdE"/>
-                                    <constraint firstAttribute="trailing" secondItem="YoV-ut-OXN" secondAttribute="trailing" id="Ijt-BQ-HDV"/>
-                                    <constraint firstItem="IIp-gD-F5u" firstAttribute="top" secondItem="mb4-CA-NYT" secondAttribute="top" id="Pu9-TU-0tu"/>
-                                    <constraint firstAttribute="bottom" secondItem="YoV-ut-OXN" secondAttribute="bottom" id="QDU-Oq-59i"/>
-                                    <constraint firstItem="YoV-ut-OXN" firstAttribute="top" secondItem="IIp-gD-F5u" secondAttribute="bottom" constant="2" id="gHu-45-mau"/>
-                                    <constraint firstItem="IIp-gD-F5u" firstAttribute="leading" secondItem="mb4-CA-NYT" secondAttribute="leading" id="hNt-tH-vVn"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="mN4-1Y-zBn" id="f7t-MT-Leo"/>
                                 </connections>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BD0-ur-lwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="Bru-Dd-nwZ">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Y9D-KO-Ryi">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rx6-ST-cal">
+                                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Bruha">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </barButtonItem>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rc9-qk-cgQ">
+                                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Notification">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="RPC-Nw-O9I">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zZn-5w-ZYT">
+                                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Map">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="uBt-GY-R42" kind="modal" id="vhK-tH-J0j"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BD0-ur-lwQ" firstAttribute="leading" secondItem="WDk-Al-5AE" secondAttribute="leading" id="0IT-qh-MWr"/>
+                            <constraint firstAttribute="trailing" secondItem="BD0-ur-lwQ" secondAttribute="trailing" id="OpR-M4-L3Q"/>
                             <constraint firstItem="mb4-CA-NYT" firstAttribute="top" secondItem="WDk-Al-5AE" secondAttribute="top" id="Qkv-fL-baE"/>
                             <constraint firstItem="mb4-CA-NYT" firstAttribute="bottom" secondItem="trF-PV-TB2" secondAttribute="top" id="SMu-kC-bR5"/>
                             <constraint firstAttribute="trailing" secondItem="mb4-CA-NYT" secondAttribute="trailing" id="b07-Mu-0ic"/>
                             <constraint firstItem="mb4-CA-NYT" firstAttribute="leading" secondItem="WDk-Al-5AE" secondAttribute="leading" id="sPW-R6-gdT"/>
+                            <constraint firstItem="BD0-ur-lwQ" firstAttribute="top" secondItem="WDk-Al-5AE" secondAttribute="top" id="us3-8n-vtf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -575,41 +707,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebb-96-qIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1990" y="672"/>
-        </scene>
-        <!--Main View Controller-->
-        <scene sceneID="JbA-vh-AdL">
-            <objects>
-                <viewController storyboardIdentifier="MainViewController" id="pIf-kU-qU3" customClass="MainViewController" customModule="BruhaMobile" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qU6-1t-IvX"/>
-                        <viewControllerLayoutGuide type="bottom" id="c2r-ey-Rsf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="r90-uc-ibb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MainViewController" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXH-dJ-yXT">
-                                <rect key="frame" x="71" y="167" width="179" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-l8-TU6">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="ec6-C4-hLg"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.82236426767676774" green="0.82236426767676774" blue="0.82236426767676774" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="panView" destination="B7k-l8-TU6" id="e9T-6t-Mwo"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5nq-LQ-kl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1607" y="678"/>
         </scene>
         <!--Scroll Pages-->
         <scene sceneID="0qs-eN-niO">
@@ -730,8 +827,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="vhK-tH-J0j"/>
         <segue reference="CFe-Lm-PF7"/>
-        <segue reference="SK4-bd-3mc"/>
         <segue reference="wUO-i9-fp1"/>
         <segue reference="eef-Jf-qGK"/>
     </inferredMetricsTieBreakers>

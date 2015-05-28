@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         GMSServices.provideAPIKey(googleMapsApiKey)
-        self.createMenuView()
+       // self.createMenuView()
         return true
     }
 
@@ -114,19 +114,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // create viewController code...
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MainViewController
-        //let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
-        //let bottomViewController = storyboard.instantiateViewControllerWithIdentifier("BottomViewController") as! BottomViewController
+        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! ExploreController
+        /*let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController*/
+        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
         
         //let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
         //leftViewController.mainViewController = nvc
         
-        //let slideMenuController = SlideMenuController(mainViewController:nvc, bottomMenuViewController: bottomViewController)
+        let slideMenuController = SlideMenuController(mainViewController:mainViewController,rightMenuViewController: rightViewController)
         
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
-        //self.window?.rootViewController = slideMenuController
+        self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
     }
+
+
 }
 
