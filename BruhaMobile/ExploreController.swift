@@ -10,18 +10,16 @@ import UIKit
 
 class ExploreController: UIViewController {
 
+    
     @IBOutlet weak var singlePageScroll: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         singlePageScroll.contentSize.height = 1000
-
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
