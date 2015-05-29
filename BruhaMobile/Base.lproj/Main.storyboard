@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tuk-TG-kf2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xT-Rb-Lrl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -450,6 +450,46 @@
             </objects>
             <point key="canvasLocation" x="1022" y="-235"/>
         </scene>
+        <!--Explore Pop Up View Controller-->
+        <scene sceneID="YWB-0r-gLe">
+            <objects>
+                <viewController storyboardIdentifier="ExplorePopUp" id="LIZ-pe-Rdc" customClass="ExplorePopUpViewController" customModule="BruhaMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fO7-97-5Vm"/>
+                        <viewControllerLayoutGuide type="bottom" id="nyP-Lg-Fo9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5au-Ab-65l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WyD-TE-Jak">
+                                <rect key="frame" x="0.0" y="93" width="320" height="214"/>
+                                <color key="backgroundColor" red="0.67547286179999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neq-bK-KqG">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopUp:" destination="LIZ-pe-Rdc" eventType="touchUpInside" id="Y8b-mU-xiG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WyD-TE-Jak" secondAttribute="trailing" id="0QY-bB-JsD"/>
+                            <constraint firstItem="WyD-TE-Jak" firstAttribute="leading" secondItem="5au-Ab-65l" secondAttribute="leading" id="Vig-It-EvO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="WyD-TE-Jak" id="Imn-3o-ybF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoE-7e-6T7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-1077"/>
+        </scene>
         <!--Right View Controller-->
         <scene sceneID="7tq-RS-tc2">
             <objects>
@@ -481,7 +521,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xJ-fI-qOt">
-                                <rect key="frame" x="63" y="74" width="220" height="40"/>
+                                <rect key="frame" x="16" y="28" width="220" height="40"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Buy Ticket">
@@ -576,7 +616,7 @@
         <!--Explore Controller-->
         <scene sceneID="Iqg-1c-fV9">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="mN4-1Y-zBn" customClass="ExploreController" customModule="BruhaMobile" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExploreController" id="mN4-1Y-zBn" customClass="ExploreController" customModule="BruhaMobile" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8MU-sv-abj"/>
                         <viewControllerLayoutGuide type="bottom" id="trF-PV-TB2"/>
@@ -588,20 +628,31 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mb4-CA-NYT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epM-UJ-b99">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="0.73314144739999998" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clf-ci-LXD">
                                         <rect key="frame" x="10" y="10" width="46" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5c-5a-H77">
-                                        <rect key="frame" x="0.0" y="402" width="375" height="350"/>
-                                        <color key="backgroundColor" red="0.82236426770000004" green="0.82236426770000004" blue="0.82236426770000004" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gpt-0z-vs4">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="261"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3N-JC-VAE">
+                                                <rect key="frame" x="136" y="116" width="48" height="30"/>
+                                                <state key="normal" title="PopUp">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="popPressed:" destination="mN4-1Y-zBn" eventType="touchUpInside" id="cDL-3U-kfV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sd0-qd-XTS">
+                                        <rect key="frame" x="0.0" y="307" width="320" height="261"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -829,7 +880,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="vhK-tH-J0j"/>
         <segue reference="CFe-Lm-PF7"/>
-        <segue reference="wUO-i9-fp1"/>
         <segue reference="eef-Jf-qGK"/>
+        <segue reference="PIQ-R1-qL7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -32,6 +32,11 @@ class ExploreController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    @IBAction func popPressed(sender: AnyObject) {
+        let storyboard = UIStoryboard(name:"Main",bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("ExplorePopUp") as! ExplorePopUpViewController
+        vc.showInView(self.view , animated: true)
+    }
     
 
     /*

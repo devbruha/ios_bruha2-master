@@ -42,17 +42,19 @@ class ListViewController: UIViewController {
 
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! ExploreController
+        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("ExplorePopUp") as! ExplorePopUpViewController
         
         
         let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
         
-        let slideMenuController = SlideMenuController(mainViewController: mainViewController, rightMenuViewController: rightViewController)
+        let exploreController = storyboard.instantiateViewControllerWithIdentifier("ExploreController") as! ExploreController
+        
+        let slideMenuController = SlideMenuController(mainViewController: exploreController, rightMenuViewController: rightViewController)
         
         
         self.presentViewController(slideMenuController, animated: false, completion: nil)
         
-    //    self.performSegueWithIdentifier("ExploreDetails", sender: self)
+        self.performSegueWithIdentifier("ExploreDetails", sender: self)
         
         
     }

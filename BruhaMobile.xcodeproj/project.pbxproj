@@ -30,11 +30,10 @@
 		0AB9B48F1AF84B7E006A5A6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */; };
 		0AB9B49B1AF84B7F006A5A6C /* BruhaMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9B49A1AF84B7F006A5A6C /* BruhaMobileTests.swift */; };
 		0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */; };
-		0AED9C5F1AF98E4900EC9AF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED9C5E1AF98E4900EC9AF9 /* ListViewController.swift */; };
+		0AED9C5F1AF98E4900EC9AF9 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED9C5E1AF98E4900EC9AF9 /* DashBoardViewController.swift */; };
 		0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */; };
 		0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A91B0042F300437ED6 /* GooglePlace.swift */; };
 		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
-		18873F2F1B13BCDB005E9FD2 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F2E1B13BCDB005E9FD2 /* BaseTableViewCell.swift */; };
 		18873F311B13BCE1005E9FD2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F301B13BCE1005E9FD2 /* StringExtension.swift */; };
 		18873F331B13BCE8005E9FD2 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18873F321B13BCE8005E9FD2 /* UITableViewExtension.swift */; };
 		18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCC1B0B827500779957 /* TypesTableViewController.swift */; };
@@ -45,13 +44,9 @@
 		189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B2FB91B162FFB00E3EBFA /* ExploreController.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
+		18BA5DAF1B18B59D00A91802 /* ExplorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA5DAE1B18B59D00A91802 /* ExplorePopUpViewController.swift */; };
 		18BDBFDF1B178C86009691D7 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */; };
-		18BDBFE11B178CB3009691D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFE01B178CB3009691D7 /* MainViewController.swift */; };
 		18BDBFE31B178CC4009691D7 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFE21B178CC4009691D7 /* RightViewController.swift */; };
-		18BDBFE51B178D4E009691D7 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFE41B178D4E009691D7 /* SwiftViewController.swift */; };
-		18BDBFE71B178D57009691D7 /* JavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFE61B178D57009691D7 /* JavaViewController.swift */; };
-		18BDBFE91B178D60009691D7 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFE81B178D60009691D7 /* GoViewController.swift */; };
-		18BDBFEB1B178D67009691D7 /* NonMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFEA1B178D67009691D7 /* NonMenuController.swift */; };
 		18BDBFED1B178DED009691D7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */; };
 		18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */; };
 		18EBBCF41B0E621A00E59FF1 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EBBCEE1B0E621A00E59FF1 /* photo1.png */; };
@@ -101,11 +96,10 @@
 		0AB9B4991AF84B7F006A5A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AB9B49A1AF84B7F006A5A6C /* BruhaMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruhaMobileTests.swift; sourceTree = "<group>"; };
 		0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		0AED9C5E1AF98E4900EC9AF9 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		0AED9C5E1AF98E4900EC9AF9 /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		0AF091A91B0042F300437ED6 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
-		18873F2E1B13BCDB005E9FD2 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		18873F301B13BCE1005E9FD2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		18873F321B13BCE8005E9FD2 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		18929BCC1B0B827500779957 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
@@ -116,13 +110,9 @@
 		189B2FB91B162FFB00E3EBFA /* ExploreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		18BA5DAE1B18B59D00A91802 /* ExplorePopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePopUpViewController.swift; sourceTree = "<group>"; };
 		18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
-		18BDBFE01B178CB3009691D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18BDBFE21B178CC4009691D7 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
-		18BDBFE41B178D4E009691D7 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
-		18BDBFE61B178D57009691D7 /* JavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaViewController.swift; sourceTree = "<group>"; };
-		18BDBFE81B178D60009691D7 /* GoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
-		18BDBFEA1B178D67009691D7 /* NonMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMenuController.swift; sourceTree = "<group>"; };
 		18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPages.swift; sourceTree = "<group>"; };
 		18EBBCEE1B0E621A00E59FF1 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
@@ -210,12 +200,13 @@
 			children = (
 				0AB9B4811AF84B7E006A5A6C /* AppDelegate.swift */,
 				0AB9B4861AF84B7E006A5A6C /* SplashViewController.swift */,
-				0AED9C5E1AF98E4900EC9AF9 /* ListViewController.swift */,
+				0AED9C5E1AF98E4900EC9AF9 /* DashBoardViewController.swift */,
 				0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */,
 				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
+				18BA5DAE1B18B59D00A91802 /* ExplorePopUpViewController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
@@ -255,14 +246,8 @@
 		18873F271B13B74F005E9FD2 /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				18BDBFE01B178CB3009691D7 /* MainViewController.swift */,
 				18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */,
 				18BDBFE21B178CC4009691D7 /* RightViewController.swift */,
-				18BDBFE41B178D4E009691D7 /* SwiftViewController.swift */,
-				18BDBFE61B178D57009691D7 /* JavaViewController.swift */,
-				18BDBFE81B178D60009691D7 /* GoViewController.swift */,
-				18BDBFEA1B178D67009691D7 /* NonMenuController.swift */,
-				18873F2E1B13BCDB005E9FD2 /* BaseTableViewCell.swift */,
 				18873F301B13BCE1005E9FD2 /* StringExtension.swift */,
 				18873F321B13BCE8005E9FD2 /* UITableViewExtension.swift */,
 				18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */,
@@ -408,34 +393,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BDBFE91B178D60009691D7 /* GoViewController.swift in Sources */,
 				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
 				189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */,
-				18BDBFEB1B178D67009691D7 /* NonMenuController.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
 				18873F331B13BCE8005E9FD2 /* UITableViewExtension.swift in Sources */,
 				18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */,
 				18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */,
 				18873F311B13BCE1005E9FD2 /* StringExtension.swift in Sources */,
 				18BDBFED1B178DED009691D7 /* UIViewControllerExtension.swift in Sources */,
-				18873F2F1B13BCDB005E9FD2 /* BaseTableViewCell.swift in Sources */,
-				18BDBFE71B178D57009691D7 /* JavaViewController.swift in Sources */,
 				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
-				18BDBFE11B178CB3009691D7 /* MainViewController.swift in Sources */,
-				0AED9C5F1AF98E4900EC9AF9 /* ListViewController.swift in Sources */,
+				0AED9C5F1AF98E4900EC9AF9 /* DashBoardViewController.swift in Sources */,
 				0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */,
 				18BDBFE31B178CC4009691D7 /* RightViewController.swift in Sources */,
-				18BDBFE51B178D4E009691D7 /* SwiftViewController.swift in Sources */,
 				18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */,
 				0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */,
 				0AB9B4851AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld in Sources */,
 				0AB9B4821AF84B7E006A5A6C /* AppDelegate.swift in Sources */,
 				18BDBFDF1B178C86009691D7 /* SlideMenuController.swift in Sources */,
 				0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */,
+				18BA5DAF1B18B59D00A91802 /* ExplorePopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
