@@ -40,9 +40,19 @@ class ListViewController: UIViewController {
     
     func imageTapped(){
 
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! ExploreController
         
         
-        self.performSegueWithIdentifier("ExploreDetails", sender: self)
+        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
+        
+        let slideMenuController = SlideMenuController(mainViewController: mainViewController, rightMenuViewController: rightViewController)
+        
+        
+        self.presentViewController(slideMenuController, animated: false, completion: nil)
+        
+    //    self.performSegueWithIdentifier("ExploreDetails", sender: self)
         
         
     }

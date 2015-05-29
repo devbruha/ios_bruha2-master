@@ -17,22 +17,16 @@ class ExploreController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         singlePageScroll.contentSize.height = 1000
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! ExploreController
 
-        
-        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
-        
-        let slideMenuController = SlideMenuController(mainViewController: mainViewController, rightMenuViewController: rightViewController)
-        
-       
-        self.presentViewController(right, animated: false, completion: nil)
         
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         //self.setNavigationBarItem()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+     
     }
 
     override func didReceiveMemoryWarning() {
