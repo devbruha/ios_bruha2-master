@@ -54,7 +54,7 @@ class ListViewController: UIViewController {
         
         self.presentViewController(slideMenuController, animated: false, completion: nil)
         
-        self.performSegueWithIdentifier("ExploreDetails", sender: self)
+     //   self.performSegueWithIdentifier("ExploreDetails", sender: self)
         
         
     }

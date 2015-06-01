@@ -12,7 +12,8 @@ class ExploreController: UIViewController {
     
 
     
-    @IBOutlet weak var singlePageScroll: UIScrollView!
+    @IBOutlet var singlePageScroll: UIScrollView!
+    var popUpView: ExplorePopUpViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +33,12 @@ class ExploreController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     @IBAction func popPressed(sender: AnyObject) {
         let storyboard = UIStoryboard(name:"Main",bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("ExplorePopUp") as! ExplorePopUpViewController
-        vc.showInView(self.view , animated: true)
+        popUpView = storyboard.instantiateViewControllerWithIdentifier("ExplorePopUp") as! ExplorePopUpViewController
+        self.addChildViewController(popUpView)
+        popUpView.showInView(self.view , animated: true)
     }
     
 
