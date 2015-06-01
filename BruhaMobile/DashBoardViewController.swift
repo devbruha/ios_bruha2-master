@@ -69,6 +69,7 @@ class ListViewController: UIViewController {
         view.addGestureRecognizer(screenEdgeRecognizer)
 
         // Do any additional setup after loading the view.
+
     }
     
 

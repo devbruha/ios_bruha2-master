@@ -96,7 +96,8 @@ class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
         //mainContainerView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
         view.insertSubview(mainContainerView, atIndex: 0)
 
-        /*var opacityframe: CGRect = view.bounds
+        //opacity for the frame
+        var opacityframe: CGRect = view.bounds
         var opacityOffset: CGFloat = 0
         opacityframe.origin.y = opacityframe.origin.y + opacityOffset
         opacityframe.size.height = opacityframe.size.height - opacityOffset
@@ -104,7 +105,7 @@ class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
         opacityView.backgroundColor = UIColor.blackColor()
         opacityView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
         opacityView.layer.opacity = 0.0
-        view.insertSubview(opacityView, atIndex: 1)*/
+        view.insertSubview(opacityView, atIndex: 1)
         
         //var leftFrame: CGRect = view.bounds
         //leftFrame.size.width = SlideMenuOptions.leftViewWidth

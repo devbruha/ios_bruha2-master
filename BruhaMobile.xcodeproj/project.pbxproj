@@ -48,6 +48,8 @@
 		18BDBFDF1B178C86009691D7 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */; };
 		18BDBFE31B178CC4009691D7 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFE21B178CC4009691D7 /* RightViewController.swift */; };
 		18BDBFED1B178DED009691D7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */; };
+		18C1F06C1B1C9B2B00E85AE0 /* ExploreSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1F06B1B1C9B2B00E85AE0 /* ExploreSubView.swift */; };
+		18C1F06E1B1C9B4500E85AE0 /* ExploreSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C1F06D1B1C9B4500E85AE0 /* ExploreSubView.xib */; };
 		18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */; };
 		18EBBCF41B0E621A00E59FF1 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EBBCEE1B0E621A00E59FF1 /* photo1.png */; };
 		18EBBCF51B0E621A00E59FF1 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EBBCEF1B0E621A00E59FF1 /* photo2.png */; };
@@ -114,6 +116,8 @@
 		18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
 		18BDBFE21B178CC4009691D7 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		18C1F06B1B1C9B2B00E85AE0 /* ExploreSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreSubView.swift; sourceTree = "<group>"; };
+		18C1F06D1B1C9B4500E85AE0 /* ExploreSubView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExploreSubView.xib; path = ../ExploreSubView.xib; sourceTree = "<group>"; };
 		18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPages.swift; sourceTree = "<group>"; };
 		18EBBCEE1B0E621A00E59FF1 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
 		18EBBCEF1B0E621A00E59FF1 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
@@ -206,8 +210,10 @@
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
+				18C1F06B1B1C9B2B00E85AE0 /* ExploreSubView.swift */,
 				18BA5DAE1B18B59D00A91802 /* ExplorePopUpViewController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
+				18C1F06D1B1C9B4500E85AE0 /* ExploreSubView.xib */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
@@ -368,6 +374,7 @@
 				18EBBCF81B0E621A00E59FF1 /* photo5.png in Resources */,
 				18EBBCF41B0E621A00E59FF1 /* photo1.png in Resources */,
 				18EBBCF91B0E621A00E59FF1 /* slow.png in Resources */,
+				18C1F06E1B1C9B4500E85AE0 /* ExploreSubView.xib in Resources */,
 				0AB9B48A1AF84B7E006A5A6C /* Main.storyboard in Resources */,
 				18EBBCF61B0E621A00E59FF1 /* photo3.png in Resources */,
 				18EBBCF71B0E621A00E59FF1 /* photo4.png in Resources */,
@@ -404,6 +411,7 @@
 				18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */,
 				18873F311B13BCE1005E9FD2 /* StringExtension.swift in Sources */,
 				18BDBFED1B178DED009691D7 /* UIViewControllerExtension.swift in Sources */,
+				18C1F06C1B1C9B2B00E85AE0 /* ExploreSubView.swift in Sources */,
 				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
 				0AED9C5F1AF98E4900EC9AF9 /* DashBoardViewController.swift in Sources */,

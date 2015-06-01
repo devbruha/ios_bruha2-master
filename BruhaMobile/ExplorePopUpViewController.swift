@@ -11,14 +11,18 @@ import UIKit
 class ExplorePopUpViewController: UIViewController {
 
     @IBOutlet weak var popUpView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
         self.popUpView.layer.cornerRadius = 5
         self.popUpView.layer.shadowOpacity = 0.8
         self.popUpView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
-
-
+        
+        var opacityView = UIView()
+        var opacityframe: CGRect = view.bounds
+        var opacityOffset: CGFloat = 0
         // Do any additional setup after loading the view.
     }
 

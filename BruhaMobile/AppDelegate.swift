@@ -109,14 +109,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    private func createMenuView() {
+    /*private func createMenuView() {
         
         // create viewController code...
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         //let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! ExploreController
         /*let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController*/
-        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
+        //let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
         
         //let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
@@ -127,7 +127,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
         //self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
-    }
+    }*/
 
 
 }
