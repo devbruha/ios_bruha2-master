@@ -11,6 +11,8 @@ import UIKit
 class EventsTableViewCell: UITableViewCell {
     @IBOutlet weak var eventTitle: UILabel!
     @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var circView: CircleView!
+    @IBOutlet weak var rectView: RectView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,10 +24,4 @@ class EventsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func popPressed(sender: AnyObject) {
-        let storyboard = UIStoryboard(name:"Main",bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("explorePopUp") as! ExplorePopUpTableViewController
-        //vc.showInView(self.view.cell, animated: true)
-    }
-
 }

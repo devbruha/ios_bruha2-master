@@ -1,15 +1,15 @@
 //
-//  PushButtonView.swift
+//  CircleView.swift
 //  BruhaMobile
 //
-//  Created by lye on 15/6/2.
-//  Copyright (c) 2015年 Bruha. All rights reserved.
+//  Created by Ryan O'Neill on 2015-06-05.
+//  Copyright (c) 2015 Bruha. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class CircularButtonView: UIButton{
+class CircleView: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -22,11 +22,6 @@ class CircularButtonView: UIButton{
         var path = UIBezierPath(ovalInRect: rect)
         UIColor.blueColor().colorWithAlphaComponent(0.5).setFill()
         path.fill()
-        
-        /*var label = UILable(frame:CGRectMake(100, 100, 40, 20))
-        label.text = "Cars"
-        label.textColor = UIColor.whiteColor()
-        self.view.addSubview(label)*/
     }
 
 }

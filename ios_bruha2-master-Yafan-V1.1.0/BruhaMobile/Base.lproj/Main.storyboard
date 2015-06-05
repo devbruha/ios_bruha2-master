@@ -666,19 +666,14 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTx-xj-ZBx">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="294"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-da-XEb" customClass="CircularButtonView" customModule="BruhaMobile" customModuleProvider="target">
-                                                    <rect key="frame" x="75" y="64" width="170" height="170"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="170" id="Z1z-EE-S6b"/>
-                                                        <constraint firstAttribute="width" constant="170" id="u8z-hP-MWx"/>
-                                                    </constraints>
-                                                    <state key="normal">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="popPressed:" destination="pfS-7h-t1Z" eventType="touchUpInside" id="p38-1W-lud"/>
-                                                    </connections>
-                                                </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-63-fcv" customClass="RectView" customModule="BruhaMobile" customModuleProvider="target">
+                                                    <rect key="frame" x="27" y="46" width="266" height="183"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RFe-9d-UPx" customClass="CircleView" customModule="BruhaMobile" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="64" width="160" height="148"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-wZ-0yq">
                                                     <rect key="frame" x="118" y="77" width="76" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -706,8 +701,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="rTx-xj-ZBx" secondAttribute="bottom" constant="3" id="2jF-Ms-4hk"/>
-                                                <constraint firstItem="7Vj-da-XEb" firstAttribute="centerY" secondItem="rTx-xj-ZBx" secondAttribute="centerY" constant="2" id="7dD-DE-88r"/>
-                                                <constraint firstItem="7Vj-da-XEb" firstAttribute="centerX" secondItem="rTx-xj-ZBx" secondAttribute="centerX" id="AaN-FG-Txw"/>
                                                 <constraint firstItem="rTx-xj-ZBx" firstAttribute="leading" secondItem="9SM-f6-O8Q" secondAttribute="leading" id="JgC-HJ-o2r"/>
                                                 <constraint firstAttribute="trailing" secondItem="rTx-xj-ZBx" secondAttribute="trailing" id="aY5-1R-Z4B"/>
                                                 <constraint firstAttribute="trailing" secondItem="Mad-wZ-0yq" secondAttribute="trailing" constant="126" id="dOM-CT-KwT"/>
@@ -718,8 +711,10 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="eventImage" destination="rTx-xj-ZBx" id="vf9-wi-6Ql"/>
-                                            <outlet property="eventTitle" destination="Mad-wZ-0yq" id="Va8-1e-hFo"/>
+                                            <outlet property="circView" destination="RFe-9d-UPx" id="Lcj-FG-Fg6"/>
+                                            <outlet property="eventImage" destination="rTx-xj-ZBx" id="nT2-VV-t0O"/>
+                                            <outlet property="eventTitle" destination="Mad-wZ-0yq" id="eog-UY-nmO"/>
+                                            <outlet property="rectView" destination="cQ8-63-fcv" id="bu9-EJ-U5z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

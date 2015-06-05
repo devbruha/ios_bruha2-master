@@ -12,8 +12,11 @@ class ExploreController: UIViewController {
     
     
     @IBOutlet weak var events: UITableView!
+    
+    var counter:[Int] = []
+    
+    let tapRec = UITapGestureRecognizer()
 
-    //var popUpView: ExplorePopUpViewController!
     
     var car = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
     var carName = ["Lamborghini", "Drift", "Ferrari", "Hyundai","Mercedes Benz","Mitsubishi","Nissan","Volkswagen"]
@@ -63,11 +66,34 @@ class ExploreController: UIViewController {
         //cell.lblTitle.text=stringTitle
         cell.eventImage.image = UIImage(named: strCarName)
         cell.eventTitle.text = stringTitle
+        
+        tapRec.addTarget(self, action: "tappedView")
+        
+        cell.rectView.addGestureRecognizer(tapRec)
+        cell.rectView.userInteractionEnabled = true
+        
         return cell as EventsTableViewCell
-        
-        
-        return cell
     }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
+        
+        var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "moreInfo" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+                    })
+     
+        var secondAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Preview" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+                    })
+        
+        var thirdAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Buy Tickets" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+        })
+
+      
+        return [firstAction,secondAction,thirdAction]
+    }
+    
+
     
     
     //popUp an alertView
@@ -98,5 +124,12 @@ class ExploreController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func tappedView(){
+        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the tap view", preferredStyle: UIAlertControllerStyle.Alert)
+        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        self.presentViewController(tapAlert, animated: true, completion: nil)
+        
+    }
+
 
 }

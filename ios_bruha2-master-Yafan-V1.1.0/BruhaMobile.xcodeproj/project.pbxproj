@@ -43,7 +43,6 @@
 		18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD41B0B82E300779957 /* UIViewExtension.swift */; };
 		189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B2FB91B162FFB00E3EBFA /* ExploreController.swift */; };
 		18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */; };
-		18B0E5C01B1E2EB200B55DE9 /* CirclularButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0E5BF1B1E2EB200B55DE9 /* CirclularButtonView.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
 		18BDBFDF1B178C86009691D7 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */; };
@@ -51,6 +50,8 @@
 		18BDBFED1B178DED009691D7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */; };
 		18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */; };
 		3CD8EE86E14E725A3F153FDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4498A5DCF91B3417E51F314 /* libPods.a */; };
+		45646C121B223EC5004B2102 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45646C111B223EC5004B2102 /* CircleView.swift */; };
+		45646C141B223EE1004B2102 /* RectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45646C131B223EE1004B2102 /* RectView.swift */; };
 		45B9B6741B1F62EC00D29CF4 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 45B9B6731B1F62EC00D29CF4 /* PodFile */; };
 		45B9B6AC1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B9B6AB1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -107,7 +108,6 @@
 		18929BD41B0B82E300779957 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		189B2FB91B162FFB00E3EBFA /* ExploreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
-		18B0E5BF1B1E2EB200B55DE9 /* CirclularButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclularButtonView.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		18BDBFDE1B178C86009691D7 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
@@ -115,6 +115,8 @@
 		18BDBFEC1B178DED009691D7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPages.swift; sourceTree = "<group>"; };
 		3102E79239917FE79BF0825D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		45646C111B223EC5004B2102 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		45646C131B223EE1004B2102 /* RectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectView.swift; sourceTree = "<group>"; };
 		45B9B6731B1F62EC00D29CF4 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		45B9B6AB1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePopUpTableViewController.swift; sourceTree = "<group>"; };
 		6BA139A930058D54200C072F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,7 +212,8 @@
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
 				45B9B6AB1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
-				18B0E5BF1B1E2EB200B55DE9 /* CirclularButtonView.swift */,
+				45646C111B223EC5004B2102 /* CircleView.swift */,
+				45646C131B223EE1004B2102 /* RectView.swift */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
@@ -426,10 +429,11 @@
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
+				45646C141B223EE1004B2102 /* RectView.swift in Sources */,
 				18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */,
-				18B0E5C01B1E2EB200B55DE9 /* CirclularButtonView.swift in Sources */,
 				45B9B6AC1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift in Sources */,
 				189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */,
+				45646C121B223EC5004B2102 /* CircleView.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
 				18873F331B13BCE8005E9FD2 /* UITableViewExtension.swift in Sources */,
 				18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */,
