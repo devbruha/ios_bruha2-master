@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-ARSlidingPanel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SWTableViewCell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17B7749920AEA0C51B5C08F4</key>
+		<key>56F7658E4D6363EB43E48819</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB8184D56A4C647A3C060E9D</key>
+		<key>AA17CA67B7E8BD00366DA398</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6AAC7786E42B296CC4253DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6AAC7786E42B296CC4253DA"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
+               BlueprintIdentifier = "AA17CA67B7E8BD00366DA398"
+               BuildableName = "libPods-ARSlidingPanel.a"
+               BlueprintName = "Pods-ARSlidingPanel"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

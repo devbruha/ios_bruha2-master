@@ -54,6 +54,7 @@
 		45646C141B223EE1004B2102 /* RectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45646C131B223EE1004B2102 /* RectView.swift */; };
 		45B9B6741B1F62EC00D29CF4 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 45B9B6731B1F62EC00D29CF4 /* PodFile */; };
 		45B9B6AC1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B9B6AB1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift */; };
+		45ECA28D1B24A0FF004C646C /* FilterPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		45646C131B223EE1004B2102 /* RectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectView.swift; sourceTree = "<group>"; };
 		45B9B6731B1F62EC00D29CF4 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		45B9B6AB1B1F7D7B00D29CF4 /* ExplorePopUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePopUpTableViewController.swift; sourceTree = "<group>"; };
+		45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPanelViewController.swift; sourceTree = "<group>"; };
+		45ECA28E1B24ABDC004C646C /* BruhaMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BruhaMobile-Bridging-Header.h"; sourceTree = "<group>"; };
 		6BA139A930058D54200C072F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C4498A5DCF91B3417E51F314 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,6 +206,7 @@
 			children = (
 				0AB9B4811AF84B7E006A5A6C /* AppDelegate.swift */,
 				0AB9B4861AF84B7E006A5A6C /* SplashViewController.swift */,
+				45ECA28E1B24ABDC004C646C /* BruhaMobile-Bridging-Header.h */,
 				0AED9C5E1AF98E4900EC9AF9 /* DashBoardViewController.swift */,
 				0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */,
 				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
@@ -214,6 +218,7 @@
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				45646C111B223EC5004B2102 /* CircleView.swift */,
 				45646C131B223EE1004B2102 /* RectView.swift */,
+				45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
@@ -425,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45ECA28D1B24A0FF004C646C /* FilterPanelViewController.swift in Sources */,
 				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,

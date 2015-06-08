@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ExploreController: UIViewController {
+class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate {
     
     
     @IBOutlet weak var events: UITableView!
+    
+    var panelControllerContainer: ARSPContainerController!
     
     var counter:[Int] = []
     
@@ -28,6 +30,11 @@ class ExploreController: UIViewController {
         {
             events?.rowHeight=300;
         }
+        
+        self.panelControllerContainer = self.parentViewController as! ARSPContainerController
+        self.panelControllerContainer.dragDelegate = self
+        self.panelControllerContainer.visibilityStateDelegate = self
+        
         
         //let mySubview:ExploreSubView = ExploreSubView(frame: CGRect(x:10, y:500, width:300, height:249))
         //self.view.addSubview(mySubview)
@@ -93,6 +100,24 @@ class ExploreController: UIViewController {
         return [firstAction,secondAction,thirdAction]
     }
     
+    //for slider dragging
+    
+    func panelControllerChangedVisibilityState(state:ARSPVisibilityState) {
+        //TODO
+        if(panelControllerContainer.shouldOverlapMainViewController){
+            if (state.value == ARSPVisibilityStateMaximized.value) {
+                self.panelControllerContainer.panelViewController.view.alpha = 1
+            }else{
+                self.panelControllerContainer.panelViewController.view.alpha = 0.9
+            }
+        }else{
+            self.panelControllerContainer.panelViewController.view.alpha = 1
+        }
+    }
+    
+    func panelControllerWasDragged(panelControllerVisibility : CGFloat) {
+        
+    }
 
     
     

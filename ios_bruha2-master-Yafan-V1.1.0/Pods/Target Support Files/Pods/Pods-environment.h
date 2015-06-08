@@ -6,6 +6,12 @@
 // project.
 
 
+// ARSlidingPanel
+#define COCOAPODS_POD_AVAILABLE_ARSlidingPanel
+#define COCOAPODS_VERSION_MAJOR_ARSlidingPanel 0
+#define COCOAPODS_VERSION_MINOR_ARSlidingPanel 1
+#define COCOAPODS_VERSION_PATCH_ARSlidingPanel 0
+
 // SWTableViewCell
 #define COCOAPODS_POD_AVAILABLE_SWTableViewCell
 #define COCOAPODS_VERSION_MAJOR_SWTableViewCell 0
