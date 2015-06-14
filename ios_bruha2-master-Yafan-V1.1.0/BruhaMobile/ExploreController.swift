@@ -17,7 +17,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     
     var counter:[Int] = []
     
-    let tapRec = UITapGestureRecognizer()
+   // let tapRec = UITapGestureRecognizer()
 
     
     var car = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
@@ -73,11 +73,28 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         //cell.lblTitle.text=stringTitle
         cell.eventImage.image = UIImage(named: strCarName)
         cell.eventTitle.text = stringTitle
-        
-        tapRec.addTarget(self, action: "tappedView")
-        
+  
+        /*let tapRec = UITapGestureRecognizer()
+        let tapRec2 = UITapGestureRecognizer()
+        tapRec.addTarget(self, action: "tappedView:")
+        tapRec2.addTarget(self, action: "tappedView2:")
         cell.rectView.addGestureRecognizer(tapRec)
         cell.rectView.userInteractionEnabled = true
+        cell.circView.addGestureRecognizer(tapRec2)
+        cell.circView.userInteractionEnabled = true
+*/
+/*
+        if(!cell.circView.hidden && !cell.rectView.hidden){
+            cell.circView.hidden = true
+        }else if(cell.circView.hidden){
+            cell.circView.hidden = false
+            cell.rectView.hidden = true
+        }else{
+            cell.circView.hidden = true
+            cell.rectView.hidden = false
+        }
+*/
+
         
         return cell as EventsTableViewCell
     }
@@ -149,10 +166,19 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         // Pass the selected object to the new view controller.
     }
     */
-    func tappedView(){
-        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the tap view", preferredStyle: UIAlertControllerStyle.Alert)
+    func tappedView(sender:UITapGestureRecognizer){
+        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the rect view", preferredStyle: UIAlertControllerStyle.Alert)
         tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
         self.presentViewController(tapAlert, animated: true, completion: nil)
+        sender.view?.hidden = true
+
+    }
+    
+    func tappedView2(sender:UITapGestureRecognizer){
+        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the circle view", preferredStyle: UIAlertControllerStyle.Alert)
+        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        self.presentViewController(tapAlert, animated: true, completion: nil)
+        sender.view?.hidden = true
         
     }
 

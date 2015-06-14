@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class RectView: UIView {
+class RectView: UIView{
 
     /*
     // Only override drawRect: if you perform custom drawing.

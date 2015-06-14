@@ -18,10 +18,14 @@ class CircleView: UIView {
         // Drawing code
     }
     */
+    let tapRec = UITapGestureRecognizer()
+    
     override func drawRect(rect: CGRect) {
         var path = UIBezierPath(ovalInRect: rect)
         UIColor.blueColor().colorWithAlphaComponent(0.5).setFill()
         path.fill()
     }
+    
+
 
 }
