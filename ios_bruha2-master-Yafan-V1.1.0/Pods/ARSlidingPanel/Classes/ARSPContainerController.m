@@ -468,8 +468,8 @@
 {
     _visibilityState = ARSPVisibilityStateMinimized;
     
-    _visibleZoneHeight = 0.f;
-    _swipableZoneHeight = 0.f;
+    _visibleZoneHeight = 80.f;
+    _swipableZoneHeight = 80.f;
     
     _dropShadow = NO;
     _shadowRadius = 20.f;

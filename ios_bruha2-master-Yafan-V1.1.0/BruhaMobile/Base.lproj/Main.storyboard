@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3xT-Rb-Lrl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="s7w-hd-g0L">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -866,24 +866,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="83g-d8-5hM">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="74"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drag Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHk-Bm-toV">
-                                                <rect key="frame" x="121" y="26" width="78" height="21"/>
+                                                <rect key="frame" x="129" y="26" width="78" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="67" id="f3L-qi-UlV"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5372549295425415" green="0.68627452850341797" blue="0.90588241815567017" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="Knb-V3-TQz"/>
+                                    <constraint firstItem="83g-d8-5hM" firstAttribute="top" secondItem="nf7-QX-b0i" secondAttribute="top" id="BIr-67-ti7"/>
+                                    <constraint firstItem="83g-d8-5hM" firstAttribute="leading" secondItem="nf7-QX-b0i" secondAttribute="leading" id="Tcm-Al-oSU"/>
+                                    <constraint firstAttribute="trailing" secondItem="83g-d8-5hM" secondAttribute="trailing" id="wtv-6d-xsH"/>
                                 </constraints>
                             </view>
                         </subviews>
