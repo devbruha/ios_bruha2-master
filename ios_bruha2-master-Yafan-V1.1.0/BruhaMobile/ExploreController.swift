@@ -15,7 +15,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     
     var panelControllerContainer: ARSPContainerController!
     
-    var counter:[Int] = []
+    //var counter:[Int] = []
     
    // let tapRec = UITapGestureRecognizer()
 
@@ -73,6 +73,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         //cell.lblTitle.text=stringTitle
         cell.eventImage.image = UIImage(named: strCarName)
         cell.eventTitle.text = stringTitle
+        
   
         /*let tapRec = UITapGestureRecognizer()
         let tapRec2 = UITapGestureRecognizer()
@@ -101,17 +102,19 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     }
-    
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
         
         var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "moreInfo" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
                     })
+        firstAction.backgroundColor = UIColor.orangeColor()
      
         var secondAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Preview" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
                     })
+        secondAction.backgroundColor = UIColor.grayColor()
         
         var thirdAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Buy Tickets" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
         })
+        thirdAction.backgroundColor = UIColor.purpleColor()
 
       
         return [firstAction,secondAction,thirdAction]
@@ -166,7 +169,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         // Pass the selected object to the new view controller.
     }
     */
-    func tappedView(sender:UITapGestureRecognizer){
+    /*func tappedView(sender:UITapGestureRecognizer){
         let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the rect view", preferredStyle: UIAlertControllerStyle.Alert)
         tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
         self.presentViewController(tapAlert, animated: true, completion: nil)
@@ -181,6 +184,6 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         sender.view?.hidden = true
         
     }
-
+*/
 
 }

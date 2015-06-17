@@ -1,15 +1,15 @@
 //
-//  CircleView.swift
+//  Circle.swift
 //  BruhaMobile
 //
-//  Created by Ryan O'Neill on 2015-06-05.
+//  Created by Ryan O'Neill on 2015-06-17.
 //  Copyright (c) 2015 Bruha. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class CircleView: UIView {
+class Circle: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -18,8 +18,6 @@ class CircleView: UIView {
         // Drawing code
     }
     */
-    let tapRec = UITapGestureRecognizer()
-    
     override func drawRect(rect: CGRect) {
         var path = UIBezierPath(ovalInRect: rect)
         UIColor.blueColor().colorWithAlphaComponent(0.65).setFill()
@@ -34,7 +32,7 @@ class CircleView: UIView {
         dynamicLabel.textColor = UIColor.whiteColor()
         dynamicLabel.textAlignment = NSTextAlignment.Center
         /*for i in carName{
-            dynamicLabel.text = i
+        dynamicLabel.text = i
         }*/
         dynamicLabel.text = "Color Run"
         self.addSubview(dynamicLabel)
@@ -86,7 +84,6 @@ class CircleView: UIView {
         distanceLabel.font = distanceLabel.font.fontWithSize(9)
         self.addSubview(distanceLabel)
     }
-    
 
 
 }

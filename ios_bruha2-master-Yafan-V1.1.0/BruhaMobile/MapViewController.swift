@@ -30,6 +30,15 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         locationManager.requestWhenInUseAuthorization()
         mapView.delegate = self
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNavigationBarItem()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
     // 1
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         // 2
@@ -335,18 +344,23 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
     @IBAction func MapButtonPressed(sender: UIButton) {
         
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let mapViewController = storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
         
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("explorePopUp") as! ExplorePopUpTableViewController
+        let topViewController = storyboard.instantiateViewControllerWithIdentifier("TopViewController") as! TopViewController
         
         
-        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
+        //let mainViewController = storyboard.instantiateViewControllerWithIdentifier("explorePopUp") as! ExplorePopUpTableViewController
+        
+        
+        //let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
         
         let exploreController = storyboard.instantiateViewControllerWithIdentifier("ExploreController") as! ExploreController
         
-        let slideMenuController = SlideMenuController(mainViewController: exploreController, rightMenuViewController: rightViewController)
+        let slideMenuController = SlideMenuController(mainViewController: exploreController, topMenuViewController: topViewController)
         
         
-        self.presentViewController(slideMenuController, animated: false, completion: nil)
+        self.presentViewController(exploreController, animated: false, completion: nil)
 
     }
 

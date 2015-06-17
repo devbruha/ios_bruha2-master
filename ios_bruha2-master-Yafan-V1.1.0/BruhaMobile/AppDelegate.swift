@@ -16,6 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let googleMapsApiKey = "AIzaSyDWPbYMQPFcbFg4yWO-4Rk1Rn9DiaUOn34"
     
+    private func createMenuView() {
+        
+        // create viewController code...
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let mapViewController = storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
+        //let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
+        let topViewController = storyboard.instantiateViewControllerWithIdentifier("TopViewController") as! TopViewController
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: mapViewController)
+        
+        //leftViewController.mainViewController = nvc
+        
+        let slideMenuController = SlideMenuController(mainViewController:nvc,topMenuViewController: topViewController)
+        
+        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
+    }
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         GMSServices.provideAPIKey(googleMapsApiKey)
@@ -109,26 +129,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    /*private func createMenuView() {
-        
-        // create viewController code...
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        //let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! ExploreController
-        /*let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController*/
-        //let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
-        
-        //let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
-        
-        //leftViewController.mainViewController = nvc
-        
-        //let slideMenuController = SlideMenuController(mainViewController:mainViewController,rightMenuViewController: rightViewController)
-        
-        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
-        //self.window?.rootViewController = slideMenuController
-        self.window?.makeKeyAndVisible()
-    }*/
-
+    
 
 }
 

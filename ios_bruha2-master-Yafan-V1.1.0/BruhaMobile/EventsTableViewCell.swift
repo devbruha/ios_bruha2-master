@@ -41,4 +41,5 @@ class EventsTableViewCell: UITableViewCell {
             rectView.hidden = false
         }
     }
+
 }

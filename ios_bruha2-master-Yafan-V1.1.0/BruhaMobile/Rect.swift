@@ -1,15 +1,15 @@
 //
-//  RectView.swift
+//  Rect.swift
 //  BruhaMobile
 //
-//  Created by Ryan O'Neill on 2015-06-05.
+//  Created by Ryan O'Neill on 2015-06-17.
 //  Copyright (c) 2015 Bruha. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class RectView: UIView{
+class Rect: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -94,9 +94,8 @@ class RectView: UIView{
         endDateLabel.text = "Friday, July 6th, 2015 at 4:00 PM"
         endDateLabel.font = locationLabel.font.fontWithSize(14)
         self.addSubview(endDateLabel)
-
-
-
+        
     }
+
 
 }
