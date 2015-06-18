@@ -1,19 +1,20 @@
 //
-//  MyUploadsCell.swift
+//  AddictionTableViewCell.swift
 //  BruhaMobile
 //
-//  Created by Ryan O'Neill on 2015-06-17.
+//  Created by Ryan O'Neill on 2015-06-18.
 //  Copyright (c) 2015 Bruha. All rights reserved.
 //
 
 import UIKit
 
-class MyUploadsCell: UITableViewCell {
-
-    @IBOutlet weak var circView: Circle!
-    @IBOutlet weak var rectView: Rect!
-    @IBOutlet weak var uploadLabel: UILabel!
-    @IBOutlet weak var uploadImage: UIImageView!
+class AddictionTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var circView: CircView!
+    @IBOutlet weak var rectView: RectangularView!
+    @IBOutlet weak var addictionLabel: UILabel!
+    @IBOutlet weak var addictionImage: UIImageView!
+    
     let tapRec = UITapGestureRecognizer()
     
     override func awakeFromNib() {
@@ -22,12 +23,11 @@ class MyUploadsCell: UITableViewCell {
         rectView.hidden = true
         tapRec.addTarget(self, action: "tappedView:")
         self.addGestureRecognizer(tapRec)
-
+        
     }
-
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     func tappedView(sender:UITapGestureRecognizer){
@@ -42,5 +42,6 @@ class MyUploadsCell: UITableViewCell {
             rectView.hidden = false
         }
     }
+
 
 }

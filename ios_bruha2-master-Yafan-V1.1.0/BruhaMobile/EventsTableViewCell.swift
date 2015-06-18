@@ -19,6 +19,7 @@ class EventsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        rectView.hidden = true
         tapRec.addTarget(self, action: "tappedView:")
         self.addGestureRecognizer(tapRec)
     }

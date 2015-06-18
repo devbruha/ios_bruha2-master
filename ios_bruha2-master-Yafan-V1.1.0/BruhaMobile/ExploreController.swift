@@ -11,6 +11,7 @@ import UIKit
 class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate {
     
     
+    @IBOutlet weak var bruha: UIButton!
     @IBOutlet weak var events: UITableView!
     
     var panelControllerContainer: ARSPContainerController!
@@ -22,6 +23,18 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     
     var car = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
     var carName = ["Lamborghini", "Drift", "Ferrari", "Hyundai","Mercedes Benz","Mitsubishi","Nissan","Volkswagen"]
+    
+    var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
+    
+    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
+        self.performSegueWithIdentifier("GoToMenu", sender: self)
+    }
+    
+    func backTapped(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("BackBruha", sender: self)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +53,13 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         //self.view.addSubview(mySubview)
         //mySubview.view.backgroundColor = UIColor.whiteColor()
         //mySubview.titleLabel.text = "Third label!"
+        
+        var tgr = UITapGestureRecognizer(target:self , action: Selector("backTapped"))
+        bruha.addGestureRecognizer(tgr)
+        bruha.userInteractionEnabled = true
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+        screenEdgeRecognizer.edges = .Left
+        view.addGestureRecognizer(screenEdgeRecognizer)
         
     }
 
@@ -141,25 +161,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
 
     
     
-    //popUp an alertView
-    /*func tableView(tableView: UITableView!, didDeselectRowAtIndexPath indexPath: NSIndexPath!) {
-        
-        var popView = UIAlertController(title: "Sample Popup", message: "You clicked cell at index : \(indexPath!.row)", preferredStyle: UIAlertControllerStyle.Alert)
-        popView.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(popView, animated: true, completion: nil)
-        
-    }*/
-    /*func popPressed1(sender: AnyObject) {
-        let storyboard = UIStoryboard(name:"Main",bundle: nil)
-        popUpView = storyboard.instantiateViewControllerWithIdentifier("ExplorePopUp") as! ExplorePopUpViewController
-        self.addChildViewController(popUpView)
-        self.exploreSubView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.0)
-        self.exploreSubView2.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1.0)
-        popUpView.showInView(self.exploreSubView, animated: true)
-        
-            }*/
     
-
     /*
     // MARK: - Navigation
 

@@ -12,6 +12,11 @@ class ListViewController: UIViewController {
 
 
     @IBOutlet weak var ExploreImageView: UIImageView!
+    
+    @IBOutlet weak var MyUploadsImageView: UIImageView!
+    
+    @IBOutlet weak var MyAddicImageView: UIImageView!
+    
     @IBOutlet var segmentedControl: UISegmentedControl!
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
@@ -59,6 +64,17 @@ class ListViewController: UIViewController {
         
     }
     
+    func uploadTapped(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("MyUploadsImageView", sender: self)
+    }
+    
+    func addictionTapped(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("MyAddicImageView", sender: self)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var tgr = UITapGestureRecognizer(target:self , action: Selector("imageTapped"))
@@ -67,6 +83,21 @@ class ListViewController: UIViewController {
         screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
         screenEdgeRecognizer.edges = .Left
         view.addGestureRecognizer(screenEdgeRecognizer)
+        
+        var tgr3 = UITapGestureRecognizer(target: self, action: Selector("uploadTapped"))
+        MyUploadsImageView.addGestureRecognizer(tgr3)
+        MyUploadsImageView.userInteractionEnabled = true
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+        screenEdgeRecognizer.edges = .Left
+        view.addGestureRecognizer(screenEdgeRecognizer)
+        
+        var tgr4 = UITapGestureRecognizer(target: self, action: Selector("addictionTapped"))
+        MyAddicImageView.addGestureRecognizer(tgr4)
+        MyAddicImageView.userInteractionEnabled = true
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+        screenEdgeRecognizer.edges = .Left
+        view.addGestureRecognizer(screenEdgeRecognizer)
+
 
         // Do any additional setup after loading the view.
 

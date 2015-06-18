@@ -1,21 +1,21 @@
 //
-//  MyUploadsViewController.swift
+//  MyAddictionViewController.swift
 //  BruhaMobile
 //
-//  Created by Ryan O'Neill on 2015-06-17.
+//  Created by Ryan O'Neill on 2015-06-18.
 //  Copyright (c) 2015 Bruha. All rights reserved.
 //
 
 import UIKit
 
-class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate {
-    
+class MyAddictionViewController: UIViewController, ARSPDragDelegate, ARSPVisibilityStateDelegate {
+
     @IBOutlet weak var bruha: UIButton!
-    @IBOutlet weak var myUploadTable: UITableView!
+    @IBOutlet weak var myAddictionsTable: UITableView!
     
     var panelControllerContainer: ARSPContainerController!
-    var car = ["1.jpg","2.jpg","3.jpg"]
-    var carName = ["Lamborghini", "Drift", "Ferrari"]
+    var car = ["2.jpg","3.jpg","1.jpg"]
+    var carName = ["Lamborghini","Drift", "Ferrari","Lamborghini"]
     
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     
@@ -29,9 +29,10 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
         
     }
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
         self.panelControllerContainer = self.parentViewController as! ARSPContainerController
         self.panelControllerContainer.dragDelegate = self
@@ -63,31 +64,20 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
         return car.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell : MyUploadsCell! = tableView.dequeueReusableCellWithIdentifier("Cell") as! MyUploadsCell!
+        var cell : AddictionTableViewCell! = tableView.dequeueReusableCellWithIdentifier("Cell") as! AddictionTableViewCell!
         
         // Configure the cell...
         
         if(cell == nil)
         {
-            cell = NSBundle.mainBundle().loadNibNamed("Cell", owner: self, options: nil)[0] as! MyUploadsCell;
+            cell = NSBundle.mainBundle().loadNibNamed("Cell", owner: self, options: nil)[0] as! AddictionTableViewCell;
         }
         let stringTitle = carName[indexPath.row] as String //NOT NSString
         let strCarName = car[indexPath.row] as String
         //cell.lblTitle.text=stringTitle
-        cell.uploadImage.image = UIImage(named: strCarName)
-        cell.uploadLabel.text = stringTitle
-        return cell as MyUploadsCell
-    }
-    
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    }
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
-        
-        var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Stats" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-        })
-        firstAction.backgroundColor = UIColor.purpleColor()
-        
-        return [firstAction]
+        cell.addictionImage.image = UIImage(named: strCarName)
+        cell.addictionLabel.text = stringTitle
+        return cell as AddictionTableViewCell
     }
     func panelControllerChangedVisibilityState(state:ARSPVisibilityState) {
         //TODO
@@ -105,7 +95,17 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
     func panelControllerWasDragged(panelControllerVisibility : CGFloat) {
         
     }
+
     
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }

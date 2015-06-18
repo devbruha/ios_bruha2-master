@@ -58,6 +58,12 @@
 		4581F06A1B30B2030035065F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581F0651B30B2030035065F /* UIViewControllerExtension.swift */; };
 		4581F06C1B30B2270035065F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581F06B1B30B2270035065F /* TopViewController.swift */; };
 		4581F06E1B30B8F70035065F /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581F06D1B30B8F70035065F /* SlideMenuController.swift */; };
+		459490221B33187A004AD490 /* UploadPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459490211B33187A004AD490 /* UploadPanelViewController.swift */; };
+		459490251B332F1F004AD490 /* MyAddictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459490241B332F1F004AD490 /* MyAddictionViewController.swift */; };
+		459490271B3332C0004AD490 /* AddictionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459490261B3332C0004AD490 /* AddictionTableViewCell.swift */; };
+		459490291B3332EB004AD490 /* CircView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459490281B3332EB004AD490 /* CircView.swift */; };
+		4594902B1B3332FF004AD490 /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594902A1B3332FF004AD490 /* RectangularView.swift */; };
+		4594902D1B334441004AD490 /* AddictionPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4594902C1B334441004AD490 /* AddictionPanelViewController.swift */; };
 		45B9B6741B1F62EC00D29CF4 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 45B9B6731B1F62EC00D29CF4 /* PodFile */; };
 		45ECA28D1B24A0FF004C646C /* FilterPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */; };
 /* End PBXBuildFile section */
@@ -129,6 +135,12 @@
 		4581F0651B30B2030035065F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4581F06B1B30B2270035065F /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		4581F06D1B30B8F70035065F /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		459490211B33187A004AD490 /* UploadPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPanelViewController.swift; sourceTree = "<group>"; };
+		459490241B332F1F004AD490 /* MyAddictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAddictionViewController.swift; sourceTree = "<group>"; };
+		459490261B3332C0004AD490 /* AddictionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddictionTableViewCell.swift; sourceTree = "<group>"; };
+		459490281B3332EB004AD490 /* CircView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircView.swift; sourceTree = "<group>"; };
+		4594902A1B3332FF004AD490 /* RectangularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
+		4594902C1B334441004AD490 /* AddictionPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddictionPanelViewController.swift; sourceTree = "<group>"; };
 		45B9B6731B1F62EC00D29CF4 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPanelViewController.swift; sourceTree = "<group>"; };
 		45ECA28E1B24ABDC004C646C /* BruhaMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BruhaMobile-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -231,6 +243,7 @@
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
+				459490231B332EFA004AD490 /* My Addictions */,
 				45375B921B31F72400265987 /* My Uploads */,
 				4581F05E1B30B13D0035065F /* MapDropDownBox */,
 				18929BCB1B0B821C00779957 /* GoogleMaps */,
@@ -288,6 +301,7 @@
 				45375BC51B3201FB00265987 /* MyUploadsCell.swift */,
 				45375BC71B32055500265987 /* Circle.swift */,
 				45375BC91B32056800265987 /* Rect.swift */,
+				459490211B33187A004AD490 /* UploadPanelViewController.swift */,
 			);
 			name = "My Uploads";
 			sourceTree = "<group>";
@@ -304,6 +318,18 @@
 				4581F06B1B30B2270035065F /* TopViewController.swift */,
 			);
 			name = MapDropDownBox;
+			sourceTree = "<group>";
+		};
+		459490231B332EFA004AD490 /* My Addictions */ = {
+			isa = PBXGroup;
+			children = (
+				459490241B332F1F004AD490 /* MyAddictionViewController.swift */,
+				459490261B3332C0004AD490 /* AddictionTableViewCell.swift */,
+				459490281B3332EB004AD490 /* CircView.swift */,
+				4594902A1B3332FF004AD490 /* RectangularView.swift */,
+				4594902C1B334441004AD490 /* AddictionPanelViewController.swift */,
+			);
+			name = "My Addictions";
 			sourceTree = "<group>";
 		};
 		EE00B83983E14921FAA38A76 /* Pods */ = {
@@ -453,20 +479,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459490271B3332C0004AD490 /* AddictionTableViewCell.swift in Sources */,
 				45ECA28D1B24A0FF004C646C /* FilterPanelViewController.swift in Sources */,
 				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
+				459490251B332F1F004AD490 /* MyAddictionViewController.swift in Sources */,
 				45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
+				4594902D1B334441004AD490 /* AddictionPanelViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
 				45646C141B223EE1004B2102 /* RectView.swift in Sources */,
+				459490221B33187A004AD490 /* UploadPanelViewController.swift in Sources */,
 				4581F0681B30B2030035065F /* StringExtension.swift in Sources */,
 				18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */,
 				189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */,
+				459490291B3332EB004AD490 /* CircView.swift in Sources */,
 				45646C121B223EC5004B2102 /* CircleView.swift in Sources */,
 				4581F06A1B30B2030035065F /* UIViewControllerExtension.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
 				18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */,
+				4594902B1B3332FF004AD490 /* RectangularView.swift in Sources */,
 				18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */,
 				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,

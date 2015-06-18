@@ -1,15 +1,15 @@
 //
-//  Rect.swift
+//  RectangularView.swift
 //  BruhaMobile
 //
-//  Created by Ryan O'Neill on 2015-06-17.
+//  Created by Ryan O'Neill on 2015-06-18.
 //  Copyright (c) 2015 Bruha. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class Rect: UIView {
+class RectangularView: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.

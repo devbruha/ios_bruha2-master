@@ -32,7 +32,7 @@ class RectView: UIView{
         self.addSubview(dynamicLabel)
         
         var priceLabel: UILabel = UILabel()
-        priceLabel.frame = CGRectMake(280, 15, 80, 20)
+        priceLabel.frame = CGRectMake(250, 15, 80, 20)
         priceLabel.backgroundColor = UIColor.clearColor()
         priceLabel.textColor = UIColor.whiteColor()
         priceLabel.textAlignment = NSTextAlignment.Center
