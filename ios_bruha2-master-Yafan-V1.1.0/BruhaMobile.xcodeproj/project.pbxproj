@@ -45,6 +45,9 @@
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
 		18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */; };
 		3CD8EE86E14E725A3F153FDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4498A5DCF91B3417E51F314 /* libPods.a */; };
+		4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193B1B345E9200E71D6F /* VenusViewController.swift */; };
+		4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193D1B3462AC00E71D6F /* VenuCirc.swift */; };
+		453119421B34650900E71D6F /* VenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453119411B34650900E71D6F /* VenuTableViewCell.swift */; };
 		45375B941B31F76900265987 /* MyUploadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45375B931B31F76900265987 /* MyUploadsViewController.swift */; };
 		45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45375BC51B3201FB00265987 /* MyUploadsCell.swift */; };
 		45375BC81B32055500265987 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45375BC71B32055500265987 /* Circle.swift */; };
@@ -122,6 +125,9 @@
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPages.swift; sourceTree = "<group>"; };
 		3102E79239917FE79BF0825D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4531193B1B345E9200E71D6F /* VenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
+		4531193D1B3462AC00E71D6F /* VenuCirc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuCirc.swift; sourceTree = "<group>"; };
+		453119411B34650900E71D6F /* VenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuTableViewCell.swift; sourceTree = "<group>"; };
 		45375B931B31F76900265987 /* MyUploadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUploadsViewController.swift; sourceTree = "<group>"; };
 		45375BC51B3201FB00265987 /* MyUploadsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUploadsCell.swift; sourceTree = "<group>"; };
 		45375BC71B32055500265987 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
@@ -236,6 +242,9 @@
 				18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
+				453119411B34650900E71D6F /* VenuTableViewCell.swift */,
+				4531193B1B345E9200E71D6F /* VenusViewController.swift */,
+				4531193D1B3462AC00E71D6F /* VenuCirc.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				45646C111B223EC5004B2102 /* CircleView.swift */,
 				45646C131B223EE1004B2102 /* RectView.swift */,
@@ -486,6 +495,7 @@
 				45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
+				4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */,
 				4594902D1B334441004AD490 /* AddictionPanelViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
 				45646C141B223EE1004B2102 /* RectView.swift in Sources */,
@@ -494,6 +504,7 @@
 				18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */,
 				189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */,
 				459490291B3332EB004AD490 /* CircView.swift in Sources */,
+				4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */,
 				45646C121B223EC5004B2102 /* CircleView.swift in Sources */,
 				4581F06A1B30B2030035065F /* UIViewControllerExtension.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
@@ -509,6 +520,7 @@
 				4581F06C1B30B2270035065F /* TopViewController.swift in Sources */,
 				4581F0691B30B2030035065F /* UITableViewExtension.swift in Sources */,
 				0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */,
+				453119421B34650900E71D6F /* VenuTableViewCell.swift in Sources */,
 				4581F06E1B30B8F70035065F /* SlideMenuController.swift in Sources */,
 				0AB9B4851AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld in Sources */,
 				45375B941B31F76900265987 /* MyUploadsViewController.swift in Sources */,
