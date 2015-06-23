@@ -36,6 +36,7 @@
 		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
 		183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5641B388C5C007FD211 /* SignInButton.swift */; };
 		183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */; };
+		185D94551B39CEFE0021941B /* VenuPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D94541B39CEFE0021941B /* VenuPanelViewController.swift */; };
 		18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCC1B0B827500779957 /* TypesTableViewController.swift */; };
 		18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCE1B0B829B00779957 /* PlaceMarker.swift */; };
 		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
@@ -45,7 +46,6 @@
 		18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
-		18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */; };
 		3CD8EE86E14E725A3F153FDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4498A5DCF91B3417E51F314 /* libPods.a */; };
 		4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193B1B345E9200E71D6F /* VenusViewController.swift */; };
 		4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193D1B3462AC00E71D6F /* VenuCirc.swift */; };
@@ -118,6 +118,7 @@
 		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		183CB5641B388C5C007FD211 /* SignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashIntroViewController.swift; sourceTree = "<group>"; };
+		185D94541B39CEFE0021941B /* VenuPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuPanelViewController.swift; sourceTree = "<group>"; };
 		18929BCC1B0B827500779957 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		18929BCE1B0B829B00779957 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
-		18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPages.swift; sourceTree = "<group>"; };
 		3102E79239917FE79BF0825D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4531193B1B345E9200E71D6F /* VenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
 		4531193D1B3462AC00E71D6F /* VenuCirc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuCirc.swift; sourceTree = "<group>"; };
@@ -245,12 +245,12 @@
 				0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */,
 				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
-				18EBBCEB1B0E60B000E59FF1 /* ScrollPages.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
 				453119411B34650900E71D6F /* VenuTableViewCell.swift */,
 				4531193B1B345E9200E71D6F /* VenusViewController.swift */,
 				4531193D1B3462AC00E71D6F /* VenuCirc.swift */,
+				185D94541B39CEFE0021941B /* VenuPanelViewController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				45646C111B223EC5004B2102 /* CircleView.swift */,
 				45646C131B223EE1004B2102 /* RectView.swift */,
@@ -503,6 +503,7 @@
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */,
 				4594902D1B334441004AD490 /* AddictionPanelViewController.swift in Sources */,
+				185D94551B39CEFE0021941B /* VenuPanelViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
 				45646C141B223EE1004B2102 /* RectView.swift in Sources */,
 				459490221B33187A004AD490 /* UploadPanelViewController.swift in Sources */,
@@ -523,7 +524,6 @@
 				0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */,
 				183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */,
 				45375BCA1B32056800265987 /* Rect.swift in Sources */,
-				18EBBCEC1B0E60B000E59FF1 /* ScrollPages.swift in Sources */,
 				4581F06C1B30B2270035065F /* TopViewController.swift in Sources */,
 				4581F0691B30B2030035065F /* UITableViewExtension.swift in Sources */,
 				0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */,

@@ -14,11 +14,11 @@
 		<string>https://github.com/devbruha/ios_bruha.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios_bruha2-master-Yafan-V1.1.0/BruhaMobile.xcworkspace</string>
+	<string>ios_bruha-Yafan-V1.1.0/ios_bruha2-master-Yafan-V1.1.0/BruhaMobile.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>09D4B1F8BC57AB24BC44ACD61D3A1BCA71B69E70</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/devbruha/ios_bruha.git</string>

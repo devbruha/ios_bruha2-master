@@ -8,15 +8,20 @@
 
 import UIKit
 
-class VenusViewController: UIViewController {
+class VenusViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate{
 
     @IBOutlet weak var venuTable: UITableView!
     
     var car = ["7.jpg","8.jpg"]
     var carName = ["Nissan","Volkswagen"]
     
+    var panelControllerContainer: ARSPContainerController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.panelControllerContainer = self.parentViewController as! ARSPContainerController
+        self.panelControllerContainer.dragDelegate = self
+        self.panelControllerContainer.visibilityStateDelegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -54,6 +59,25 @@ class VenusViewController: UIViewController {
         cell.venuLabel.text = stringTitle
         return cell as VenuTableViewCell
     }
+    func panelControllerChangedVisibilityState(state:ARSPVisibilityState) {
+        //TODO
+        if(panelControllerContainer.shouldOverlapMainViewController){
+            if (state.value == ARSPVisibilityStateMaximized.value) {
+                self.panelControllerContainer.panelViewController.view.alpha = 1
+            }else{
+                self.panelControllerContainer.panelViewController.view.alpha = 0.9
+            }
+        }else{
+            self.panelControllerContainer.panelViewController.view.alpha = 1
+        }
+    }
+    
+    func panelControllerWasDragged(panelControllerVisibility : CGFloat) {
+        
+    }
+    
+
+
 
 
     
