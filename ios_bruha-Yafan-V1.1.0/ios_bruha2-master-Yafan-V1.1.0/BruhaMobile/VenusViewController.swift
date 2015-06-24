@@ -10,12 +10,25 @@ import UIKit
 
 class VenusViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate{
 
+    @IBOutlet weak var bruha: UIButton!
     @IBOutlet weak var venuTable: UITableView!
     
     var car = ["7.jpg","8.jpg"]
     var carName = ["Nissan","Volkswagen"]
     
     var panelControllerContainer: ARSPContainerController!
+    
+    var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
+    
+    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
+        self.performSegueWithIdentifier("GoToMenu", sender: self)
+    }
+    
+    func backTapped(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("BackBruha", sender: self)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +37,12 @@ class VenusViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStat
         self.panelControllerContainer.visibilityStateDelegate = self
 
         // Do any additional setup after loading the view.
+        var tgr = UITapGestureRecognizer(target:self , action: Selector("backTapped"))
+        bruha.addGestureRecognizer(tgr)
+        bruha.userInteractionEnabled = true
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+        screenEdgeRecognizer.edges = .Left
+        view.addGestureRecognizer(screenEdgeRecognizer)
     }
 
     override func didReceiveMemoryWarning() {

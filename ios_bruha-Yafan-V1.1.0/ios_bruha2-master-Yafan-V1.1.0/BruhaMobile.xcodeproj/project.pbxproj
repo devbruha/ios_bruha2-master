@@ -42,6 +42,23 @@
 		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
 		18929BD31B0B82DC00779957 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18929BD21B0B82DC00779957 /* MarkerInfoView.xib */; };
 		18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD41B0B82E300779957 /* UIViewExtension.swift */; };
+		18950EFF1B3AFCDE00CCB46B /* FilterPanelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950EFE1B3AFCDE00CCB46B /* FilterPanelViewCell.swift */; };
+		18950F011B3B0B9500CCB46B /* RecoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18950F001B3B0B9500CCB46B /* RecoView.xib */; };
+		18950F031B3B0BC800CCB46B /* RecoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F021B3B0BC800CCB46B /* RecoView.swift */; };
+		18950F101B3B161900CCB46B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F051B3B161900CCB46B /* CalendarView.swift */; };
+		18950F111B3B161900CCB46B /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18950F061B3B161900CCB46B /* CalendarView.xib */; };
+		18950F121B3B161900CCB46B /* MonthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F071B3B161900CCB46B /* MonthCollectionCell.swift */; };
+		18950F131B3B161900CCB46B /* MonthCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18950F081B3B161900CCB46B /* MonthCollectionCell.xib */; };
+		18950F141B3B161900CCB46B /* DayCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F091B3B161900CCB46B /* DayCollectionCell.swift */; };
+		18950F151B3B161900CCB46B /* DayCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18950F0A1B3B161900CCB46B /* DayCollectionCell.xib */; };
+		18950F161B3B161900CCB46B /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0B1B3B161900CCB46B /* WeekHeaderView.swift */; };
+		18950F171B3B161900CCB46B /* WeekHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18950F0C1B3B161900CCB46B /* WeekHeaderView.xib */; };
+		18950F181B3B161900CCB46B /* CalendarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0D1B3B161900CCB46B /* CalendarLogic.swift */; };
+		18950F191B3B161900CCB46B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0E1B3B161900CCB46B /* Date.swift */; };
+		18950F1A1B3B161900CCB46B /* NSDateAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0F1B3B161900CCB46B /* NSDateAdditions.swift */; };
+		18950F1C1B3B164500CCB46B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F1B1B3B164500CCB46B /* CalendarViewController.swift */; };
+		18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F1D1B3B35DF00CCB46B /* RecomViewController.swift */; };
+		18950F201B3B362900CCB46B /* RecomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */; };
 		189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B2FB91B162FFB00E3EBFA /* ExploreController.swift */; };
 		18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
@@ -124,6 +141,23 @@
 		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 		18929BD21B0B82DC00779957 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		18929BD41B0B82E300779957 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		18950EFE1B3AFCDE00CCB46B /* FilterPanelViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPanelViewCell.swift; sourceTree = "<group>"; };
+		18950F001B3B0B9500CCB46B /* RecoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoView.xib; sourceTree = "<group>"; };
+		18950F021B3B0BC800CCB46B /* RecoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoView.swift; sourceTree = "<group>"; };
+		18950F051B3B161900CCB46B /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		18950F061B3B161900CCB46B /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		18950F071B3B161900CCB46B /* MonthCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionCell.swift; sourceTree = "<group>"; };
+		18950F081B3B161900CCB46B /* MonthCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthCollectionCell.xib; sourceTree = "<group>"; };
+		18950F091B3B161900CCB46B /* DayCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCollectionCell.swift; sourceTree = "<group>"; };
+		18950F0A1B3B161900CCB46B /* DayCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayCollectionCell.xib; sourceTree = "<group>"; };
+		18950F0B1B3B161900CCB46B /* WeekHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekHeaderView.swift; sourceTree = "<group>"; };
+		18950F0C1B3B161900CCB46B /* WeekHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekHeaderView.xib; sourceTree = "<group>"; };
+		18950F0D1B3B161900CCB46B /* CalendarLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarLogic.swift; sourceTree = "<group>"; };
+		18950F0E1B3B161900CCB46B /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		18950F0F1B3B161900CCB46B /* NSDateAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateAdditions.swift; sourceTree = "<group>"; };
+		18950F1B1B3B164500CCB46B /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		18950F1D1B3B35DF00CCB46B /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
+		18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomTableViewCell.swift; sourceTree = "<group>"; };
 		189B2FB91B162FFB00E3EBFA /* ExploreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
@@ -255,6 +289,12 @@
 				45646C111B223EC5004B2102 /* CircleView.swift */,
 				45646C131B223EE1004B2102 /* RectView.swift */,
 				45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */,
+				18950EFE1B3AFCDE00CCB46B /* FilterPanelViewCell.swift */,
+				18950F1B1B3B164500CCB46B /* CalendarViewController.swift */,
+				18950F1D1B3B35DF00CCB46B /* RecomViewController.swift */,
+				18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */,
+				18950F001B3B0B9500CCB46B /* RecoView.xib */,
+				18950F021B3B0BC800CCB46B /* RecoView.swift */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
@@ -262,6 +302,7 @@
 				45375B921B31F72400265987 /* My Uploads */,
 				4581F05E1B30B13D0035065F /* MapDropDownBox */,
 				18929BCB1B0B821C00779957 /* GoogleMaps */,
+				18950F041B3B15F500CCB46B /* CalendarKit */,
 				0AB9B47F1AF84B7E006A5A6C /* Supporting Files */,
 			);
 			path = BruhaMobile;
@@ -307,6 +348,24 @@
 				18929BD41B0B82E300779957 /* UIViewExtension.swift */,
 			);
 			name = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		18950F041B3B15F500CCB46B /* CalendarKit */ = {
+			isa = PBXGroup;
+			children = (
+				18950F051B3B161900CCB46B /* CalendarView.swift */,
+				18950F061B3B161900CCB46B /* CalendarView.xib */,
+				18950F071B3B161900CCB46B /* MonthCollectionCell.swift */,
+				18950F081B3B161900CCB46B /* MonthCollectionCell.xib */,
+				18950F091B3B161900CCB46B /* DayCollectionCell.swift */,
+				18950F0A1B3B161900CCB46B /* DayCollectionCell.xib */,
+				18950F0B1B3B161900CCB46B /* WeekHeaderView.swift */,
+				18950F0C1B3B161900CCB46B /* WeekHeaderView.xib */,
+				18950F0D1B3B161900CCB46B /* CalendarLogic.swift */,
+				18950F0E1B3B161900CCB46B /* Date.swift */,
+				18950F0F1B3B161900CCB46B /* NSDateAdditions.swift */,
+			);
+			name = CalendarKit;
 			sourceTree = "<group>";
 		};
 		45375B921B31F72400265987 /* My Uploads */ = {
@@ -438,12 +497,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18950F171B3B161900CCB46B /* WeekHeaderView.xib in Resources */,
 				45B9B6741B1F62EC00D29CF4 /* PodFile in Resources */,
 				0AB9B48A1AF84B7E006A5A6C /* Main.storyboard in Resources */,
 				0AB9B48F1AF84B7E006A5A6C /* LaunchScreen.xib in Resources */,
 				18929BD31B0B82DC00779957 /* MarkerInfoView.xib in Resources */,
+				18950F151B3B161900CCB46B /* DayCollectionCell.xib in Resources */,
+				18950F131B3B161900CCB46B /* MonthCollectionCell.xib in Resources */,
 				0AB9B48C1AF84B7E006A5A6C /* Images.xcassets in Resources */,
 				18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */,
+				18950F111B3B161900CCB46B /* CalendarView.xib in Resources */,
+				18950F011B3B0B9500CCB46B /* RecoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,11 +560,15 @@
 			files = (
 				459490271B3332C0004AD490 /* AddictionTableViewCell.swift in Sources */,
 				45ECA28D1B24A0FF004C646C /* FilterPanelViewController.swift in Sources */,
+				18950F101B3B161900CCB46B /* CalendarView.swift in Sources */,
 				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
 				459490251B332F1F004AD490 /* MyAddictionViewController.swift in Sources */,
 				45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */,
+				18950F1C1B3B164500CCB46B /* CalendarViewController.swift in Sources */,
+				18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
+				18950F121B3B161900CCB46B /* MonthCollectionCell.swift in Sources */,
 				4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */,
 				4594902D1B334441004AD490 /* AddictionPanelViewController.swift in Sources */,
 				185D94551B39CEFE0021941B /* VenuPanelViewController.swift in Sources */,
@@ -512,13 +580,18 @@
 				189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */,
 				459490291B3332EB004AD490 /* CircView.swift in Sources */,
 				4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */,
+				18950F031B3B0BC800CCB46B /* RecoView.swift in Sources */,
+				18950F161B3B161900CCB46B /* WeekHeaderView.swift in Sources */,
 				45646C121B223EC5004B2102 /* CircleView.swift in Sources */,
 				4581F06A1B30B2030035065F /* UIViewControllerExtension.swift in Sources */,
 				18929BD51B0B82E400779957 /* UIViewExtension.swift in Sources */,
 				18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */,
+				18950F181B3B161900CCB46B /* CalendarLogic.swift in Sources */,
 				4594902B1B3332FF004AD490 /* RectangularView.swift in Sources */,
 				18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */,
 				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
+				18950F141B3B161900CCB46B /* DayCollectionCell.swift in Sources */,
+				18950EFF1B3AFCDE00CCB46B /* FilterPanelViewCell.swift in Sources */,
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
 				0AED9C5F1AF98E4900EC9AF9 /* DashBoardViewController.swift in Sources */,
 				0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */,
@@ -527,6 +600,8 @@
 				4581F06C1B30B2270035065F /* TopViewController.swift in Sources */,
 				4581F0691B30B2030035065F /* UITableViewExtension.swift in Sources */,
 				0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */,
+				18950F201B3B362900CCB46B /* RecomTableViewCell.swift in Sources */,
+				18950F191B3B161900CCB46B /* Date.swift in Sources */,
 				453119421B34650900E71D6F /* VenuTableViewCell.swift in Sources */,
 				183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */,
 				4581F06E1B30B8F70035065F /* SlideMenuController.swift in Sources */,
@@ -536,6 +611,7 @@
 				4581F0661B30B2030035065F /* Line.swift in Sources */,
 				0AB9B4821AF84B7E006A5A6C /* AppDelegate.swift in Sources */,
 				4581F0671B30B2030035065F /* DropDownTableViewCell.swift in Sources */,
+				18950F1A1B3B161900CCB46B /* NSDateAdditions.swift in Sources */,
 				0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
