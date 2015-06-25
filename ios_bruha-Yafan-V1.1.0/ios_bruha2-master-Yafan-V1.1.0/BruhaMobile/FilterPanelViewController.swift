@@ -14,6 +14,9 @@ class FilterPanelViewController: UIViewController,CalendarViewDelegate{
     @IBOutlet weak var RecomTable: UITableView!
     @IBOutlet weak var venu: UIButton!
     @IBOutlet weak var placeholderView: UIView!
+    @IBOutlet weak var saveLabel: UILabel!
+    @IBOutlet weak var customNote: UILabel!
+    @IBOutlet weak var customLabel: UILabel!
     
     var panelControllerContainer: ARSPContainerController!
     var swipeZoneHeight: CGFloat = 30
@@ -60,6 +63,13 @@ class FilterPanelViewController: UIViewController,CalendarViewDelegate{
         // Constraints for calendar view - Fill the parent view.
         placeholderView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[calendarView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["calendarView": calendarView]))
         placeholderView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[calendarView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["calendarView": calendarView]))
+        saveLabel.backgroundColor = UIColor.orangeColor()
+        saveLabel.textColor = UIColor.whiteColor()
+        customLabel.backgroundColor = UIColor.orangeColor()
+        customLabel.textColor = UIColor.whiteColor()
+        customNote.text = "Save your filters now, to create a custom filters"
+        customNote.textColor = UIColor.grayColor()
+        customNote.font = customNote.font.fontWithSize(11)
 
     }
     func didSelectDate(date: NSDate) {
@@ -141,8 +151,6 @@ class FilterPanelViewController: UIViewController,CalendarViewDelegate{
             return FilterPanelViewCell.defaultHeight
         }
     }
-
-    
 
     
 }

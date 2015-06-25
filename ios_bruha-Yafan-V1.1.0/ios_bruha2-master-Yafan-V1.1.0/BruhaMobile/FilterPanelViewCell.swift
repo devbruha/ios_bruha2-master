@@ -26,7 +26,7 @@ class FilterPanelViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     class var expandedHeight: CGFloat {get {return 150}}
-    class var defaultHeight: CGFloat {get {return 50}}
+    class var defaultHeight: CGFloat {get {return 25}}
     
     func checkHeight(){
         picker.hidden = (frame.size.height < FilterPanelViewCell.expandedHeight)

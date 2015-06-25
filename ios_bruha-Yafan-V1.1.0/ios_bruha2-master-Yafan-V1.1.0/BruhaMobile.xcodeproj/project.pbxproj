@@ -63,6 +63,8 @@
 		18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
+		18C7E3171B3C56E100D26584 /* PriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7E3161B3C56E100D26584 /* PriceView.xib */; };
+		18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7E3181B3C56EA00D26584 /* PriceView.swift */; };
 		3CD8EE86E14E725A3F153FDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4498A5DCF91B3417E51F314 /* libPods.a */; };
 		4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193B1B345E9200E71D6F /* VenusViewController.swift */; };
 		4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193D1B3462AC00E71D6F /* VenuCirc.swift */; };
@@ -162,6 +164,8 @@
 		18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		18C7E3161B3C56E100D26584 /* PriceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceView.xib; sourceTree = "<group>"; };
+		18C7E3181B3C56EA00D26584 /* PriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		3102E79239917FE79BF0825D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4531193B1B345E9200E71D6F /* VenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
 		4531193D1B3462AC00E71D6F /* VenuCirc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuCirc.swift; sourceTree = "<group>"; };
@@ -295,6 +299,8 @@
 				18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */,
 				18950F001B3B0B9500CCB46B /* RecoView.xib */,
 				18950F021B3B0BC800CCB46B /* RecoView.swift */,
+				18C7E3161B3C56E100D26584 /* PriceView.xib */,
+				18C7E3181B3C56EA00D26584 /* PriceView.swift */,
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
@@ -505,6 +511,7 @@
 				18950F151B3B161900CCB46B /* DayCollectionCell.xib in Resources */,
 				18950F131B3B161900CCB46B /* MonthCollectionCell.xib in Resources */,
 				0AB9B48C1AF84B7E006A5A6C /* Images.xcassets in Resources */,
+				18C7E3171B3C56E100D26584 /* PriceView.xib in Resources */,
 				18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */,
 				18950F111B3B161900CCB46B /* CalendarView.xib in Resources */,
 				18950F011B3B0B9500CCB46B /* RecoView.xib in Resources */,
@@ -566,6 +573,7 @@
 				45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */,
 				18950F1C1B3B164500CCB46B /* CalendarViewController.swift in Sources */,
 				18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */,
+				18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18950F121B3B161900CCB46B /* MonthCollectionCell.swift in Sources */,

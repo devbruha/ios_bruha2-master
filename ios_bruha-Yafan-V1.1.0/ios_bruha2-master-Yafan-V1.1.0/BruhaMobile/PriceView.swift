@@ -1,23 +1,26 @@
 //
-//  RecoView.swift
-//  BruhaMobile
+//  PriceView.swift
+//  
 //
-//  Created by lye on 15/6/24.
-//  Copyright (c) 2015年 Bruha. All rights reserved.
+//  Created by Ryan O'Neill on 2015-06-11.
+//
 //
 
 import UIKit
 
 @IBDesignable
-class RecoView: UIView {
-    
-    var m_subcellNew: Array<UITableViewCell> = []
-    var names:[String] = ["Featured","ALL Events","Today","This Weekend"] //this is where you load data from database
-    
-    let rec = UITapGestureRecognizer()
-    
-    var yStart:Int = 0
-    
+class PriceView: UIView {
+
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var shownPrice: UILabel!
+    /*
+    // Only override drawRect: if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func drawRect(rect: CGRect) {
+        // Drawing code
+    }
+    */
     override init(frame: CGRect) {
         // 1. setup any properties here
         
@@ -38,7 +41,7 @@ class RecoView: UIView {
         xibSetup()
     }
     
-    var view: UIView = UIView(frame: CGRectMake(0, 0, 100, 100))
+    var view: UIView!
     
     func xibSetup() {
         view = loadViewFromNib()
@@ -51,35 +54,28 @@ class RecoView: UIView {
         
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         //m_table.dequeueReusableCellWithIdentifier("subCell")
+        price.backgroundColor = UIColor.orangeColor()
+        price.textColor = UIColor.whiteColor()
+        price.text = "Admission Price"
         
-        var i = 0
-        
-        for name in names{
-            m_subcellNew.append(UITableViewCell())
-            m_subcellNew[i].layer.borderWidth = 0.8
-            m_subcellNew[i].layer.borderColor = UIColor.whiteColor().CGColor
-            m_subcellNew[i].backgroundColor = UIColor.blackColor()
-            //  m_subcellNew[i].drawRect(CGRect(x: 80, y: yStart,width: 100, height: 80))
-            m_subcellNew[i].frame = CGRect(x: 0, y: yStart, width: Int(self.bounds.width), height: 30)
-            yStart += 30
-            m_subcellNew[i].textLabel?.textColor = UIColor.whiteColor()
-            m_subcellNew[i].textLabel?.text = name
-            view.addSubview(m_subcellNew[i])
-            i++
-        }
         addSubview(view)
         
     }
     
     func loadViewFromNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "RecoView", bundle: bundle)
+        let nib = UINib(nibName: "PriceView", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         return view
     }
-
+    @IBAction func slideValueChange(sender: UISlider) {
+        var currentValue = Int(sender.value)
+        
+        shownPrice.text = "$\(currentValue)"
+    }
+    
 
 
 }
