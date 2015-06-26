@@ -37,6 +37,7 @@
 		183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5641B388C5C007FD211 /* SignInButton.swift */; };
 		183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */; };
 		185D94551B39CEFE0021941B /* VenuPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D94541B39CEFE0021941B /* VenuPanelViewController.swift */; };
+		185F62441B3DBC8E009AE90A /* dashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F62431B3DBC8E009AE90A /* dashLine.swift */; };
 		18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCC1B0B827500779957 /* TypesTableViewController.swift */; };
 		18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCE1B0B829B00779957 /* PlaceMarker.swift */; };
 		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
@@ -138,6 +139,7 @@
 		183CB5641B388C5C007FD211 /* SignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashIntroViewController.swift; sourceTree = "<group>"; };
 		185D94541B39CEFE0021941B /* VenuPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuPanelViewController.swift; sourceTree = "<group>"; };
+		185F62431B3DBC8E009AE90A /* dashLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashLine.swift; sourceTree = "<group>"; };
 		18929BCC1B0B827500779957 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		18929BCE1B0B829B00779957 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				0AED9C5E1AF98E4900EC9AF9 /* DashBoardViewController.swift */,
 				0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */,
 				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
+				185F62431B3DBC8E009AE90A /* dashLine.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
@@ -603,6 +606,7 @@
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
 				0AED9C5F1AF98E4900EC9AF9 /* DashBoardViewController.swift in Sources */,
 				0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */,
+				185F62441B3DBC8E009AE90A /* dashLine.swift in Sources */,
 				183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */,
 				45375BCA1B32056800265987 /* Rect.swift in Sources */,
 				4581F06C1B30B2270035065F /* TopViewController.swift in Sources */,

@@ -10,10 +10,15 @@ import UIKit
 
 class MoreInfoViewController: UIViewController {
 
+    @IBOutlet weak var ticketTop: UIView!
+    
+    @IBOutlet weak var ticketBottom: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        ticketTop.layer.cornerRadius = 8.0
+        ticketBottom.layer.cornerRadius = 8.0
     }
 
     override func didReceiveMemoryWarning() {

@@ -19,8 +19,8 @@ class FilterPanelViewController: UIViewController,CalendarViewDelegate{
     @IBOutlet weak var customLabel: UILabel!
     
     var panelControllerContainer: ARSPContainerController!
-    var swipeZoneHeight: CGFloat = 30
-    var visibleZoneHeight: CGFloat = 30
+    var swipeZoneHeight: CGFloat = 90
+    var visibleZoneHeight: CGFloat = 80
 
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     

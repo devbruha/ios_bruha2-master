@@ -27,7 +27,9 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         super.viewDidLoad()
         //3
         locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.startUpdatingLocation()
         mapView.delegate = self
     }
     override func viewWillAppear(animated: Bool) {
