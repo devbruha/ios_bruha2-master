@@ -26,10 +26,10 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     
-    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
+/*    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
         self.performSegueWithIdentifier("GoToMenu", sender: self)
     }
-    
+*/
     func backTapped(){
         var storyboard = UIStoryboard(name:"Main",bundle:nil)
         self.performSegueWithIdentifier("BackBruha", sender: self)
@@ -57,10 +57,11 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         var tgr = UITapGestureRecognizer(target:self , action: Selector("backTapped"))
         bruha.addGestureRecognizer(tgr)
         bruha.userInteractionEnabled = true
+    /*
         screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
         screenEdgeRecognizer.edges = .Left
         view.addGestureRecognizer(screenEdgeRecognizer)
-        
+    */    
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,7 +117,10 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         }
 */
 
-        
+        //cell.rightUtilityButtons =
+        var temp: NSMutableArray = NSMutableArray()
+        temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "fadf")
+        cell.leftUtilityButtons = temp as [AnyObject]
         return cell as EventsTableViewCell
     }
     

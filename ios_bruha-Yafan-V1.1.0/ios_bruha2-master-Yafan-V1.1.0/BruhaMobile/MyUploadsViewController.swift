@@ -40,9 +40,9 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
         var tgr = UITapGestureRecognizer(target:self , action: Selector("backTapped"))
         bruha.addGestureRecognizer(tgr)
         bruha.userInteractionEnabled = true
-        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
-        screenEdgeRecognizer.edges = .Left
-        view.addGestureRecognizer(screenEdgeRecognizer)
+    //    screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+    //    screenEdgeRecognizer.edges = .Left
+    //    view.addGestureRecognizer(screenEdgeRecognizer)
 
     }
 
