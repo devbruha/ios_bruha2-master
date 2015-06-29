@@ -94,28 +94,6 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         //cell.lblTitle.text=stringTitle
         cell.eventImage.image = UIImage(named: strCarName)
         cell.eventTitle.text = stringTitle
-        
-  
-        /*let tapRec = UITapGestureRecognizer()
-        let tapRec2 = UITapGestureRecognizer()
-        tapRec.addTarget(self, action: "tappedView:")
-        tapRec2.addTarget(self, action: "tappedView2:")
-        cell.rectView.addGestureRecognizer(tapRec)
-        cell.rectView.userInteractionEnabled = true
-        cell.circView.addGestureRecognizer(tapRec2)
-        cell.circView.userInteractionEnabled = true
-*/
-/*
-        if(!cell.circView.hidden && !cell.rectView.hidden){
-            cell.circView.hidden = true
-        }else if(cell.circView.hidden){
-            cell.circView.hidden = false
-            cell.rectView.hidden = true
-        }else{
-            cell.circView.hidden = true
-            cell.rectView.hidden = false
-        }
-*/
 
         //cell.rightUtilityButtons =
         var temp: NSMutableArray = NSMutableArray()
@@ -130,8 +108,9 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         
         var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "moreInfo" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
                     })
+        
         firstAction.backgroundColor = UIColor.orangeColor()
-     
+        
         var secondAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Preview" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
                     })
         secondAction.backgroundColor = UIColor.grayColor()
