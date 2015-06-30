@@ -34,6 +34,7 @@
 		0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */; };
 		0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A91B0042F300437ED6 /* GooglePlace.swift */; };
 		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
+		180185D71B4302C00079C006 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180185D61B4302C00079C006 /* CalendarViewController.swift */; };
 		183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5641B388C5C007FD211 /* SignInButton.swift */; };
 		183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */; };
 		1840DBAF1B41941200A745A8 /* ticketVerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */; };
@@ -58,7 +59,6 @@
 		18950F181B3B161900CCB46B /* CalendarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0D1B3B161900CCB46B /* CalendarLogic.swift */; };
 		18950F191B3B161900CCB46B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0E1B3B161900CCB46B /* Date.swift */; };
 		18950F1A1B3B161900CCB46B /* NSDateAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F0F1B3B161900CCB46B /* NSDateAdditions.swift */; };
-		18950F1C1B3B164500CCB46B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F1B1B3B164500CCB46B /* CalendarViewController.swift */; };
 		18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F1D1B3B35DF00CCB46B /* RecomViewController.swift */; };
 		18950F201B3B362900CCB46B /* RecomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */; };
 		189B2FBA1B162FFB00E3EBFA /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B2FB91B162FFB00E3EBFA /* ExploreController.swift */; };
@@ -137,6 +137,7 @@
 		0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		0AF091A91B0042F300437ED6 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		180185D61B4302C00079C006 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		183CB5641B388C5C007FD211 /* SignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashIntroViewController.swift; sourceTree = "<group>"; };
 		1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ticketVerticalLine.swift; sourceTree = "<group>"; };
@@ -161,7 +162,6 @@
 		18950F0D1B3B161900CCB46B /* CalendarLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarLogic.swift; sourceTree = "<group>"; };
 		18950F0E1B3B161900CCB46B /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		18950F0F1B3B161900CCB46B /* NSDateAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateAdditions.swift; sourceTree = "<group>"; };
-		18950F1B1B3B164500CCB46B /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		18950F1D1B3B35DF00CCB46B /* RecomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
 		18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomTableViewCell.swift; sourceTree = "<group>"; };
 		189B2FB91B162FFB00E3EBFA /* ExploreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
@@ -290,6 +290,7 @@
 				1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
+				180185D61B4302C00079C006 /* CalendarViewController.swift */,
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
 				453119411B34650900E71D6F /* VenuTableViewCell.swift */,
 				4531193B1B345E9200E71D6F /* VenusViewController.swift */,
@@ -300,7 +301,6 @@
 				45646C131B223EE1004B2102 /* RectView.swift */,
 				45ECA28C1B24A0FF004C646C /* FilterPanelViewController.swift */,
 				18950EFE1B3AFCDE00CCB46B /* FilterPanelViewCell.swift */,
-				18950F1B1B3B164500CCB46B /* CalendarViewController.swift */,
 				18950F1D1B3B35DF00CCB46B /* RecomViewController.swift */,
 				18950F1F1B3B362900CCB46B /* RecomTableViewCell.swift */,
 				18950F001B3B0B9500CCB46B /* RecoView.xib */,
@@ -577,7 +577,6 @@
 				18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */,
 				459490251B332F1F004AD490 /* MyAddictionViewController.swift in Sources */,
 				45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */,
-				18950F1C1B3B164500CCB46B /* CalendarViewController.swift in Sources */,
 				18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */,
 				18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
@@ -624,6 +623,7 @@
 				0AB9B4851AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld in Sources */,
 				45375B941B31F76900265987 /* MyUploadsViewController.swift in Sources */,
 				45375BC81B32055500265987 /* Circle.swift in Sources */,
+				180185D71B4302C00079C006 /* CalendarViewController.swift in Sources */,
 				4581F0661B30B2030035065F /* Line.swift in Sources */,
 				0AB9B4821AF84B7E006A5A6C /* AppDelegate.swift in Sources */,
 				4581F0671B30B2030035065F /* DropDownTableViewCell.swift in Sources */,

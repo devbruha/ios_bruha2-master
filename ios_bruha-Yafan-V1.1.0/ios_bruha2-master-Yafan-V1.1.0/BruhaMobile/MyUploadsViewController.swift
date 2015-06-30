@@ -76,6 +76,11 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
         //cell.lblTitle.text=stringTitle
         cell.uploadImage.image = UIImage(named: strCarName)
         cell.uploadLabel.text = stringTitle
+        
+        /*var temp: NSMutableArray = NSMutableArray()
+        temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "Delete")
+        cell.leftUtilityButtons = temp as [AnyObject]*/
+
         return cell as MyUploadsCell
     }
     

@@ -107,6 +107,8 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
         
         var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "moreInfo" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            /*let rateMenu = UIAlertController(title: nil, message: "Rate this App", preferredStyle: .ActionSheet)
+            self.presentViewController(rateMenu, animated: true, completion: nil)*/
                     })
         
         firstAction.backgroundColor = UIColor.orangeColor()
