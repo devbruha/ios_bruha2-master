@@ -67,6 +67,7 @@
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
 		18C7E3171B3C56E100D26584 /* PriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7E3161B3C56E100D26584 /* PriceView.xib */; };
 		18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7E3181B3C56EA00D26584 /* PriceView.swift */; };
+		18F88FF11B470ECC00A9787C /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F88FF01B470ECC00A9787C /* TicketViewController.swift */; };
 		3CD8EE86E14E725A3F153FDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4498A5DCF91B3417E51F314 /* libPods.a */; };
 		4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193B1B345E9200E71D6F /* VenusViewController.swift */; };
 		4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531193D1B3462AC00E71D6F /* VenuCirc.swift */; };
@@ -170,6 +171,7 @@
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		18C7E3161B3C56E100D26584 /* PriceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceView.xib; sourceTree = "<group>"; };
 		18C7E3181B3C56EA00D26584 /* PriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		18F88FF01B470ECC00A9787C /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		3102E79239917FE79BF0825D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4531193B1B345E9200E71D6F /* VenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
 		4531193D1B3462AC00E71D6F /* VenuCirc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuCirc.swift; sourceTree = "<group>"; };
@@ -290,12 +292,13 @@
 				1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
-				180185D61B4302C00079C006 /* CalendarViewController.swift */,
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
+				180185D61B4302C00079C006 /* CalendarViewController.swift */,
 				453119411B34650900E71D6F /* VenuTableViewCell.swift */,
 				4531193B1B345E9200E71D6F /* VenusViewController.swift */,
 				4531193D1B3462AC00E71D6F /* VenuCirc.swift */,
 				185D94541B39CEFE0021941B /* VenuPanelViewController.swift */,
+				18F88FF01B470ECC00A9787C /* TicketViewController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				45646C111B223EC5004B2102 /* CircleView.swift */,
 				45646C131B223EE1004B2102 /* RectView.swift */,
@@ -594,6 +597,7 @@
 				459490291B3332EB004AD490 /* CircView.swift in Sources */,
 				4531193E1B3462AC00E71D6F /* VenuCirc.swift in Sources */,
 				18950F031B3B0BC800CCB46B /* RecoView.swift in Sources */,
+				18F88FF11B470ECC00A9787C /* TicketViewController.swift in Sources */,
 				18950F161B3B161900CCB46B /* WeekHeaderView.swift in Sources */,
 				45646C121B223EC5004B2102 /* CircleView.swift in Sources */,
 				4581F06A1B30B2030035065F /* UIViewControllerExtension.swift in Sources */,

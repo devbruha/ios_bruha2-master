@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyUploadsCell: UITableViewCell {
+class MyUploadsCell: SWTableViewCell {
 
     @IBOutlet weak var circView: Circle!
     @IBOutlet weak var rectView: Rect!
@@ -19,6 +19,7 @@ class MyUploadsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.userInteractionEnabled = true
         rectView.hidden = true
         tapRec.addTarget(self, action: "tappedView:")
         self.addGestureRecognizer(tapRec)
@@ -30,7 +31,7 @@ class MyUploadsCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func tappedView(sender:UITapGestureRecognizer){
+    func tappedView(){
         
         if(!circView.hidden && !rectView.hidden){
             circView.hidden = true

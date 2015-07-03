@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate {
+class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate,SWTableViewCellDelegate {
     
     @IBOutlet weak var bruha: UIButton!
     @IBOutlet weak var myUploadTable: UITableView!
@@ -18,10 +18,6 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
     var carName = ["Lamborghini", "Drift", "Ferrari"]
     
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
-    
-    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
-        self.performSegueWithIdentifier("GoToMenu", sender: self)
-    }
     
     func backTapped(){
         var storyboard = UIStoryboard(name:"Main",bundle:nil)
@@ -40,9 +36,6 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
         var tgr = UITapGestureRecognizer(target:self , action: Selector("backTapped"))
         bruha.addGestureRecognizer(tgr)
         bruha.userInteractionEnabled = true
-    //    screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
-    //    screenEdgeRecognizer.edges = .Left
-    //    view.addGestureRecognizer(screenEdgeRecognizer)
 
     }
 
@@ -77,22 +70,33 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
         cell.uploadImage.image = UIImage(named: strCarName)
         cell.uploadLabel.text = stringTitle
         
-        /*var temp: NSMutableArray = NSMutableArray()
+        var temp: NSMutableArray = NSMutableArray()
         temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "Delete")
-        cell.leftUtilityButtons = temp as [AnyObject]*/
+        cell.leftUtilityButtons = temp as [AnyObject]
+        
+        var temp2: NSMutableArray = NSMutableArray()
+        temp2.sw_addUtilityButtonWithColor(UIColor.purpleColor(), title: "Status")
+        cell.rightUtilityButtons = nil
+        cell.rightUtilityButtons = temp2 as [AnyObject]
+        
+        cell.delegate = self
+
 
         return cell as MyUploadsCell
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     }
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow();
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! MyUploadsCell;
+        currentCell.tappedView();
+    }
+    
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         
-        var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Stats" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-        })
-        firstAction.backgroundColor = UIColor.purpleColor()
+        return UITableViewCellEditingStyle.None
         
-        return [firstAction]
     }
     func panelControllerChangedVisibilityState(state:ARSPVisibilityState) {
         //TODO
@@ -110,6 +114,43 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
     func panelControllerWasDragged(panelControllerVisibility : CGFloat) {
         
     }
+    func swipeableTableViewCell( cell : SWTableViewCell!,didTriggerLeftUtilityButtonWithIndex index:NSInteger){
+        
+        switch(index){
+        case 0:
+            break
+        case 1:
+            // Delete button was pressed
+            /*NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+            
+            [_testArray[cellIndexPath.section] removeObjectAtIndex:cellIndexPath.row];
+            [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];*/
+            //NSIndexPath.editingStyle = .Delete(cell)
+            self.delete(self)
+            break
+        default:
+            break
+        }
+    }
+    
+    func swipeableTableViewCell( cell : SWTableViewCell!,didTriggerRightUtilityButtonWithIndex index:NSInteger){
+        switch(index){
+        case 0:
+            //Preview
+            break
+        case 1:
+            //Status
+            break
+        //case 2:
+            //More info
+            //self.performSegueWithIdentifier("GoToMoreInfo", sender: self)
+            //break
+        default:
+            break
+        }
+        
+    }
+
     
 
 

@@ -280,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576020.217211"
+            timestampString = "457627509.448441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "ExploreController"
             landmarkType = "3">
          </BreakpointContent>
@@ -296,11 +296,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576020.217211"
+            timestampString = "457627509.448441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "swipeableTableViewCell(_:didTriggerLeftUtilityButtonWithIndex:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -312,27 +312,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576020.217211"
+            timestampString = "457627509.448441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
-            landmarkName = "swipeableTableViewCell(_:didTriggerLeftUtilityButtonWithIndex:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576020.217211"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "swipeableTableViewCell(_:didTriggerRightUtilityButtonWithIndex:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -344,11 +328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576020.217211"
+            timestampString = "457627509.448441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "swipeableTableViewCell(_:didTriggerLeftUtilityButtonWithIndex:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -424,11 +408,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576020.217211"
+            timestampString = "457627509.448441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "swipeableTableViewCell(_:didTriggerRightUtilityButtonWithIndex:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -456,11 +440,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BruhaMobile/ExploreController.swift"
-            timestampString = "457576004.217154"
+            timestampString = "457627509.448441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>

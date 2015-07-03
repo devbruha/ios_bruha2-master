@@ -23,13 +23,9 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     
     var car = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
     var carName = ["Lamborghini", "Drift", "Ferrari", "Hyundai","Mercedes Benz","Mitsubishi","Nissan","Volkswagen"]
-    
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     
-/*    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
-        self.performSegueWithIdentifier("GoToMenu", sender: self)
-    }
-*/
+
     func backTapped(){
         var storyboard = UIStoryboard(name:"Main",bundle:nil)
         self.performSegueWithIdentifier("BackBruha", sender: self)
@@ -97,14 +93,14 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
 
         //cell.rightUtilityButtons =
         var temp: NSMutableArray = NSMutableArray()
-        temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "fadf")
+        temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "Get Hyped")
         cell.leftUtilityButtons = temp as [AnyObject]
 
         
         var temp2: NSMutableArray = NSMutableArray()
-        temp2.sw_addUtilityButtonWithColor(UIColor.orangeColor(), title: "Preview")
-        temp2.sw_addUtilityButtonWithColor(UIColor.yellowColor(), title: "Tickets")
-        temp2.sw_addUtilityButtonWithColor(UIColor.purpleColor(), title: "More Info")
+        temp2.sw_addUtilityButtonWithColor(UIColor.purpleColor(), title: "Buy Tickets")
+        temp2.sw_addUtilityButtonWithColor(UIColor.grayColor(), title: "Preview")
+        temp2.sw_addUtilityButtonWithColor(UIColor.orangeColor(), title: "More Info")
         cell.rightUtilityButtons = nil
         cell.rightUtilityButtons = temp2 as [AnyObject]
         
@@ -187,23 +183,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         // Pass the selected object to the new view controller.
     }
     */
-    /*func tappedView(sender:UITapGestureRecognizer){
-        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the rect view", preferredStyle: UIAlertControllerStyle.Alert)
-        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        self.presentViewController(tapAlert, animated: true, completion: nil)
-        sender.view?.hidden = true
-
-    }
-    
-    func tappedView2(sender:UITapGestureRecognizer){
-        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the circle view", preferredStyle: UIAlertControllerStyle.Alert)
-        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        self.presentViewController(tapAlert, animated: true, completion: nil)
-        sender.view?.hidden = true
-        
-    }
-*/
-    func swipeableTableViewCell( cell : SWTableViewCell!,didTriggerLeftUtilityButtonWithIndex index:NSInteger){
+        func swipeableTableViewCell( cell : SWTableViewCell!,didTriggerLeftUtilityButtonWithIndex index:NSInteger){
         
         switch(index){
             case 0:
@@ -232,9 +212,5 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         }
         
     }
-
-
-    
-
 
 }
