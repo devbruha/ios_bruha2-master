@@ -1342,6 +1342,7 @@
                     <connections>
                         <outlet property="bruha" destination="bAo-kh-scv" id="5G9-fX-t2V"/>
                         <outlet property="events" destination="zIe-Zj-38y" id="dM8-Uw-DMf"/>
+                        <segue destination="6BE-Wv-1hV" kind="modal" identifier="GoToMoreInfo" id="upf-js-fQv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rd7-8c-qwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1772,7 +1773,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgO-ia-EeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4012" y="479"/>
+            <point key="canvasLocation" x="3981" y="479"/>
         </scene>
         <!--Container Controller-->
         <scene sceneID="lPA-ES-2hi">
@@ -2388,10 +2389,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0ae-jF-TG3"/>
-        <segue reference="Lmi-c9-ZRQ"/>
-        <segue reference="L1q-sq-qkX"/>
         <segue reference="Pba-zm-trE"/>
-        <segue reference="eef-Jf-qGK"/>
+        <segue reference="UVp-WU-mvh"/>
+        <segue reference="L1q-sq-qkX"/>
+        <segue reference="4V0-aw-eRE"/>
+        <segue reference="HVd-jj-Xuh"/>
     </inferredMetricsTieBreakers>
 </document>

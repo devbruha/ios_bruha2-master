@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate {
+class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateDelegate, SWTableViewCellDelegate {
     
     
     @IBOutlet weak var bruha: UIButton!
@@ -99,11 +99,42 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         var temp: NSMutableArray = NSMutableArray()
         temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "fadf")
         cell.leftUtilityButtons = temp as [AnyObject]
+
+        
+        var temp2: NSMutableArray = NSMutableArray()
+        temp2.sw_addUtilityButtonWithColor(UIColor.orangeColor(), title: "Preview")
+        temp2.sw_addUtilityButtonWithColor(UIColor.yellowColor(), title: "Tickets")
+        temp2.sw_addUtilityButtonWithColor(UIColor.purpleColor(), title: "More Info")
+        cell.rightUtilityButtons = nil
+        cell.rightUtilityButtons = temp2 as [AnyObject]
+        
+        cell.delegate = self
+        
         return cell as EventsTableViewCell
+        
     }
     
+
+    
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow();
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! EventsTableViewCell;
+        currentCell.tappedView();
+    }
+    
+  
+  
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+
+        return UITableViewCellEditingStyle.None
+        
+    }
+    
+    /*
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
         
         var firstAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "moreInfo" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
@@ -124,7 +155,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
       
         return [firstAction,secondAction,thirdAction]
     }
-    
+    */
     //for slider dragging
     
     func panelControllerChangedVisibilityState(state:ARSPVisibilityState) {
@@ -172,5 +203,38 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         
     }
 */
+    func swipeableTableViewCell( cell : SWTableViewCell!,didTriggerLeftUtilityButtonWithIndex index:NSInteger){
+        
+        switch(index){
+            case 0:
+                break
+            case 1:
+                break
+            default:
+                break
+        }
+    }
+    
+    func swipeableTableViewCell( cell : SWTableViewCell!,didTriggerRightUtilityButtonWithIndex index:NSInteger){
+        switch(index){
+            case 0:
+            //Preview
+                break
+            case 1:
+            //Ticket
+                break
+            case 2:
+            //More info
+                self.performSegueWithIdentifier("GoToMoreInfo", sender: self)
+                break
+            default:
+                break
+        }
+        
+    }
+
+
+    
+
 
 }

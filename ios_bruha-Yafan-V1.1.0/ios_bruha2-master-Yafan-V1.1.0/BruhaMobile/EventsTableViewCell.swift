@@ -19,9 +19,10 @@ class EventsTableViewCell: SWTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.userInteractionEnabled = true
         rectView.hidden = true
-        tapRec.addTarget(self, action: "tappedView:")
-        self.addGestureRecognizer(tapRec)
+      //  tapRec.addTarget(self, action: "tappedView:")
+       // self.addGestureRecognizer(tapRec)
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
@@ -30,7 +31,7 @@ class EventsTableViewCell: SWTableViewCell {
         // Configure the view for the selected state
     }
     
-    func tappedView(sender:UITapGestureRecognizer){
+    func tappedView(){
         
         if(!circView.hidden && !rectView.hidden){
             circView.hidden = true
