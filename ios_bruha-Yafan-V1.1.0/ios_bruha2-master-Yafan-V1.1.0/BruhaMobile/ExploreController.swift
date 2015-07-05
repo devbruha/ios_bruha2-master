@@ -43,7 +43,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         self.panelControllerContainer = self.parentViewController as! ARSPContainerController
         self.panelControllerContainer.dragDelegate = self
         self.panelControllerContainer.visibilityStateDelegate = self
-        
+        self.events!.allowsMultipleSelection = false
         
         //let mySubview:ExploreSubView = ExploreSubView(frame: CGRect(x:10, y:500, width:300, height:249))
         //self.view.addSubview(mySubview)
@@ -105,6 +105,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         cell.rightUtilityButtons = temp2 as [AnyObject]
         
         cell.delegate = self
+        cell.selectionStyle = .None
         
         return cell as EventsTableViewCell
         
@@ -117,9 +118,11 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         let indexPath = tableView.indexPathForSelectedRow();
         let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! EventsTableViewCell;
         currentCell.tappedView();
+        tableView.deselectRowAtIndexPath(indexPath!, animated: false)
     }
     
   
