@@ -89,8 +89,9 @@ class MyUploadsViewController: UIViewController,ARSPDragDelegate, ARSPVisibility
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let indexPath = tableView.indexPathForSelectedRow();
-        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! MyUploadsCell;
-        currentCell.tappedView();
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! MyUploadsCell
+        currentCell.tappedView()
+        tableView.deselectRowAtIndexPath(indexPath!, animated: false)
     }
     
     func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {

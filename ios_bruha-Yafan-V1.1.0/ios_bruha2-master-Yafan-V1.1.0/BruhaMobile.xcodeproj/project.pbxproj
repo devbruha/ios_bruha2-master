@@ -65,6 +65,11 @@
 		18B0E5BC1B1E282400B55DE9 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */; };
 		18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B296AA1B0D272C0093EA70 /* MapTasks.swift */; };
 		18B76E731B0CD5B200BA0FCC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */; };
+		18BA447D1B4ACEF0004C613C /* BoughtTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA447C1B4ACEF0004C613C /* BoughtTableViewController.swift */; };
+		18BA447F1B4AE17E004C613C /* BoughtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA447E1B4AE17E004C613C /* BoughtTableViewCell.swift */; };
+		18BA44811B4AF80B004C613C /* VerticalDotLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA44801B4AF80B004C613C /* VerticalDotLine.swift */; };
+		18BA44851B4B05FF004C613C /* SoldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA44841B4B05FF004C613C /* SoldTableViewController.swift */; };
+		18BA44871B4B0614004C613C /* SoldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA44861B4B0614004C613C /* SoldTableViewCell.swift */; };
 		18C7E3171B3C56E100D26584 /* PriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7E3161B3C56E100D26584 /* PriceView.xib */; };
 		18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7E3181B3C56EA00D26584 /* PriceView.swift */; };
 		18F88FF11B470ECC00A9787C /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F88FF01B470ECC00A9787C /* TicketViewController.swift */; };
@@ -169,6 +174,11 @@
 		18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		18B296AA1B0D272C0093EA70 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		18B76E721B0CD5B200BA0FCC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		18BA447C1B4ACEF0004C613C /* BoughtTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoughtTableViewController.swift; sourceTree = "<group>"; };
+		18BA447E1B4AE17E004C613C /* BoughtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoughtTableViewCell.swift; sourceTree = "<group>"; };
+		18BA44801B4AF80B004C613C /* VerticalDotLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalDotLine.swift; sourceTree = "<group>"; };
+		18BA44841B4B05FF004C613C /* SoldTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewController.swift; sourceTree = "<group>"; };
+		18BA44861B4B0614004C613C /* SoldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldTableViewCell.swift; sourceTree = "<group>"; };
 		18C7E3161B3C56E100D26584 /* PriceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceView.xib; sourceTree = "<group>"; };
 		18C7E3181B3C56EA00D26584 /* PriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		18F88FF01B470ECC00A9787C /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
@@ -288,8 +298,8 @@
 				0AED9C5E1AF98E4900EC9AF9 /* DashBoardViewController.swift */,
 				0AED9C5C1AF9893B00EC9AF9 /* MenuViewController.swift */,
 				0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */,
-				185F62431B3DBC8E009AE90A /* dashLine.swift */,
 				1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */,
+				185F62431B3DBC8E009AE90A /* dashLine.swift */,
 				0AB641C51B02DFBD0095BA9E /* SignUpPopUpViewController.swift */,
 				189B2FB91B162FFB00E3EBFA /* ExploreController.swift */,
 				18B0E5BB1B1E282400B55DE9 /* EventsTableViewCell.swift */,
@@ -298,7 +308,6 @@
 				4531193B1B345E9200E71D6F /* VenusViewController.swift */,
 				4531193D1B3462AC00E71D6F /* VenuCirc.swift */,
 				185D94541B39CEFE0021941B /* VenuPanelViewController.swift */,
-				18F88FF01B470ECC00A9787C /* TicketViewController.swift */,
 				0AB9B4881AF84B7E006A5A6C /* Main.storyboard */,
 				45646C111B223EC5004B2102 /* CircleView.swift */,
 				45646C131B223EE1004B2102 /* RectView.swift */,
@@ -313,6 +322,7 @@
 				0AB9B48B1AF84B7E006A5A6C /* Images.xcassets */,
 				0AB9B48D1AF84B7E006A5A6C /* LaunchScreen.xib */,
 				0AB9B4831AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld */,
+				18BA447B1B4ACEA4004C613C /* My Tickets */,
 				459490231B332EFA004AD490 /* My Addictions */,
 				45375B921B31F72400265987 /* My Uploads */,
 				4581F05E1B30B13D0035065F /* MapDropDownBox */,
@@ -381,6 +391,19 @@
 				18950F0F1B3B161900CCB46B /* NSDateAdditions.swift */,
 			);
 			name = CalendarKit;
+			sourceTree = "<group>";
+		};
+		18BA447B1B4ACEA4004C613C /* My Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				18F88FF01B470ECC00A9787C /* TicketViewController.swift */,
+				18BA447C1B4ACEF0004C613C /* BoughtTableViewController.swift */,
+				18BA447E1B4AE17E004C613C /* BoughtTableViewCell.swift */,
+				18BA44841B4B05FF004C613C /* SoldTableViewController.swift */,
+				18BA44861B4B0614004C613C /* SoldTableViewCell.swift */,
+				18BA44801B4AF80B004C613C /* VerticalDotLine.swift */,
+			);
+			name = "My Tickets";
 			sourceTree = "<group>";
 		};
 		45375B921B31F72400265987 /* My Uploads */ = {
@@ -581,6 +604,7 @@
 				459490251B332F1F004AD490 /* MyAddictionViewController.swift in Sources */,
 				45375BC61B3201FB00265987 /* MyUploadsCell.swift in Sources */,
 				18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */,
+				18BA44871B4B0614004C613C /* SoldTableViewCell.swift in Sources */,
 				18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
@@ -608,12 +632,14 @@
 				1840DBAF1B41941200A745A8 /* ticketVerticalLine.swift in Sources */,
 				18B296AB1B0D272C0093EA70 /* MapTasks.swift in Sources */,
 				0AED9C5D1AF9893B00EC9AF9 /* MenuViewController.swift in Sources */,
+				18BA447D1B4ACEF0004C613C /* BoughtTableViewController.swift in Sources */,
 				18950F141B3B161900CCB46B /* DayCollectionCell.swift in Sources */,
 				18950EFF1B3AFCDE00CCB46B /* FilterPanelViewCell.swift in Sources */,
 				0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */,
 				0AED9C5F1AF98E4900EC9AF9 /* DashBoardViewController.swift in Sources */,
 				0AB641C61B02DFBD0095BA9E /* SignUpPopUpViewController.swift in Sources */,
 				185F62441B3DBC8E009AE90A /* dashLine.swift in Sources */,
+				18BA44811B4AF80B004C613C /* VerticalDotLine.swift in Sources */,
 				183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */,
 				45375BCA1B32056800265987 /* Rect.swift in Sources */,
 				4581F06C1B30B2270035065F /* TopViewController.swift in Sources */,
@@ -621,11 +647,13 @@
 				0AF091A81B0042D700437ED6 /* GoogleDataProvider.swift in Sources */,
 				18950F201B3B362900CCB46B /* RecomTableViewCell.swift in Sources */,
 				18950F191B3B161900CCB46B /* Date.swift in Sources */,
+				18BA44851B4B05FF004C613C /* SoldTableViewController.swift in Sources */,
 				453119421B34650900E71D6F /* VenuTableViewCell.swift in Sources */,
 				183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */,
 				4581F06E1B30B8F70035065F /* SlideMenuController.swift in Sources */,
 				0AB9B4851AF84B7E006A5A6C /* BruhaMobile.xcdatamodeld in Sources */,
 				45375B941B31F76900265987 /* MyUploadsViewController.swift in Sources */,
+				18BA447F1B4AE17E004C613C /* BoughtTableViewCell.swift in Sources */,
 				45375BC81B32055500265987 /* Circle.swift in Sources */,
 				180185D71B4302C00079C006 /* CalendarViewController.swift in Sources */,
 				4581F0661B30B2030035065F /* Line.swift in Sources */,
