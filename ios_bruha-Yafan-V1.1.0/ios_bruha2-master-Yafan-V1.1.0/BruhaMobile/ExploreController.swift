@@ -45,19 +45,10 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         self.panelControllerContainer.visibilityStateDelegate = self
         self.events!.allowsMultipleSelection = false
         
-        //let mySubview:ExploreSubView = ExploreSubView(frame: CGRect(x:10, y:500, width:300, height:249))
-        //self.view.addSubview(mySubview)
-        //mySubview.view.backgroundColor = UIColor.whiteColor()
-        //mySubview.titleLabel.text = "Third label!"
-        
         var tgr = UITapGestureRecognizer(target:self , action: Selector("backTapped"))
         bruha.addGestureRecognizer(tgr)
         bruha.userInteractionEnabled = true
-    /*
-        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
-        screenEdgeRecognizer.edges = .Left
-        view.addGestureRecognizer(screenEdgeRecognizer)
-    */    
+       
     }
 
     override func didReceiveMemoryWarning() {

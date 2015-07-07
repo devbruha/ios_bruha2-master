@@ -40,6 +40,7 @@
 		1840DBAF1B41941200A745A8 /* ticketVerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */; };
 		185D94551B39CEFE0021941B /* VenuPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D94541B39CEFE0021941B /* VenuPanelViewController.swift */; };
 		185F62441B3DBC8E009AE90A /* dashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F62431B3DBC8E009AE90A /* dashLine.swift */; };
+		188D618D1B4C2A3400838929 /* TicketFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D618C1B4C2A3400838929 /* TicketFilterViewController.swift */; };
 		18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCC1B0B827500779957 /* TypesTableViewController.swift */; };
 		18929BCF1B0B829B00779957 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BCE1B0B829B00779957 /* PlaceMarker.swift */; };
 		18929BD11B0B82D200779957 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18929BD01B0B82D200779957 /* MarkerInfoView.swift */; };
@@ -149,6 +150,7 @@
 		1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ticketVerticalLine.swift; sourceTree = "<group>"; };
 		185D94541B39CEFE0021941B /* VenuPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuPanelViewController.swift; sourceTree = "<group>"; };
 		185F62431B3DBC8E009AE90A /* dashLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashLine.swift; sourceTree = "<group>"; };
+		188D618C1B4C2A3400838929 /* TicketFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketFilterViewController.swift; sourceTree = "<group>"; };
 		18929BCC1B0B827500779957 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		18929BCE1B0B829B00779957 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		18929BD01B0B82D200779957 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				18F88FF01B470ECC00A9787C /* TicketViewController.swift */,
+				188D618C1B4C2A3400838929 /* TicketFilterViewController.swift */,
 				18BA447C1B4ACEF0004C613C /* BoughtTableViewController.swift */,
 				18BA447E1B4AE17E004C613C /* BoughtTableViewCell.swift */,
 				18BA44841B4B05FF004C613C /* SoldTableViewController.swift */,
@@ -648,6 +651,7 @@
 				18950F201B3B362900CCB46B /* RecomTableViewCell.swift in Sources */,
 				18950F191B3B161900CCB46B /* Date.swift in Sources */,
 				18BA44851B4B05FF004C613C /* SoldTableViewController.swift in Sources */,
+				188D618D1B4C2A3400838929 /* TicketFilterViewController.swift in Sources */,
 				453119421B34650900E71D6F /* VenuTableViewCell.swift in Sources */,
 				183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */,
 				4581F06E1B30B8F70035065F /* SlideMenuController.swift in Sources */,
