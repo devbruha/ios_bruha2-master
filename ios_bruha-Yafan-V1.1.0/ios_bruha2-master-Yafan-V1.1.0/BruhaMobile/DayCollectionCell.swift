@@ -51,7 +51,7 @@ class DayCollectionCell: UICollectionViewCell {
         super.layoutSubviews()
         markedViewWidth!.constant = min(self.frame.width, self.frame.height)
         markedViewHeight!.constant = min(self.frame.width, self.frame.height)
-        markedView!.layer.cornerRadius = min(self.frame.width, self.frame.height) / 2.0
+        markedView!.layer.cornerRadius = min(self.frame.width, self.frame.height)/2.0
     }
 
 }

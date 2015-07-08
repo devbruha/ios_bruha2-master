@@ -35,6 +35,7 @@
 		0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A91B0042F300437ED6 /* GooglePlace.swift */; };
 		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
 		180185D71B4302C00079C006 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180185D61B4302C00079C006 /* CalendarViewController.swift */; };
+		1832B0DE1B4DA97000D52E2B /* mapFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832B0DD1B4DA97000D52E2B /* mapFilterViewController.swift */; };
 		183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5641B388C5C007FD211 /* SignInButton.swift */; };
 		183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */; };
 		1840DBAF1B41941200A745A8 /* ticketVerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */; };
@@ -145,6 +146,7 @@
 		0AF091A91B0042F300437ED6 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		180185D61B4302C00079C006 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		1832B0DD1B4DA97000D52E2B /* mapFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapFilterViewController.swift; sourceTree = "<group>"; };
 		183CB5641B388C5C007FD211 /* SignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashIntroViewController.swift; sourceTree = "<group>"; };
 		1840DBAE1B41941200A745A8 /* ticketVerticalLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ticketVerticalLine.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			children = (
 				18B296AA1B0D272C0093EA70 /* MapTasks.swift */,
 				0A8D50C81AF9987600E295F0 /* MapViewController.swift */,
+				1832B0DD1B4DA97000D52E2B /* mapFilterViewController.swift */,
 				18929BCC1B0B827500779957 /* TypesTableViewController.swift */,
 				18929BCE1B0B829B00779957 /* PlaceMarker.swift */,
 				0AF091A71B0042D700437ED6 /* GoogleDataProvider.swift */,
@@ -609,6 +612,7 @@
 				18950F1E1B3B35DF00CCB46B /* RecomViewController.swift in Sources */,
 				18BA44871B4B0614004C613C /* SoldTableViewCell.swift in Sources */,
 				18C7E3191B3C56EA00D26584 /* PriceView.swift in Sources */,
+				1832B0DE1B4DA97000D52E2B /* mapFilterViewController.swift in Sources */,
 				0AB9B4871AF84B7E006A5A6C /* SplashViewController.swift in Sources */,
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18950F121B3B161900CCB46B /* MonthCollectionCell.swift in Sources */,

@@ -18,10 +18,21 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
     
     @IBOutlet weak var lblInfo: UILabel!
     
+    @IBOutlet weak var eventMap: UIButton!
+    
+    
+    
     var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
     var locationMarker: GMSMarker!
     
     let locationManager = CLLocationManager()
+    
+    func eventbackTapped(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("eventMap", sender: self)
+        
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +42,11 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
         mapView.delegate = self
+        
+        var tgr = UITapGestureRecognizer(target:self , action: Selector("eventbackTapped"))
+        eventMap.addGestureRecognizer(tgr)
+        eventMap.userInteractionEnabled = true
+
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -343,7 +359,7 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
     
     
     
-    @IBAction func MapButtonPressed(sender: UIButton) {
+    /*@IBAction func MapButtonPressed(sender: UIButton) {
         
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
 
@@ -364,7 +380,7 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         
         self.presentViewController(exploreController, animated: false, completion: nil)
 
-    }
+    }*/
 
 
     
