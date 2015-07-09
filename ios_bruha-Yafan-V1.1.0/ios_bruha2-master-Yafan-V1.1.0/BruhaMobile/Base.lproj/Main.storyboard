@@ -1206,7 +1206,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="s7w-hd-g0L" kind="modal" identifier="eventMap" id="U40-6m-Lej"/>
+                                    <segue destination="s7w-hd-g0L" kind="modal" identifier="eventMap" id="B4E-hy-4Ga"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1230,7 +1230,6 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressLabel" destination="zwl-SA-OqC" id="m5T-2n-wfh"/>
-                        <outlet property="eventMap" destination="sTs-Oc-hlH" id="sCq-Ow-fII"/>
                         <outlet property="lblInfo" destination="c4s-50-yOF" id="tTK-DS-SCe"/>
                         <outlet property="mapCenterPinImage" destination="iPy-wr-tdz" id="9fg-Fk-n5b"/>
                         <outlet property="mapView" destination="rhU-9e-PPy" id="g3E-US-UOt"/>
@@ -2188,7 +2187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dct-q9-pV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503" y="-235"/>
+            <point key="canvasLocation" x="2490" y="-174"/>
         </scene>
         <!--Filter Panel View Controller-->
         <scene sceneID="53J-XR-LeN">
@@ -2272,7 +2271,7 @@
                                     <rect key="frame" x="0.0" y="52" width="310" height="437"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xng-HU-VAu">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xng-HU-VAu">
                                             <rect key="frame" x="2" y="151" width="306" height="59"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave this part for the category filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvF-7s-6xw">
@@ -2338,7 +2337,7 @@
                                             <rect key="frame" x="2" y="216" width="306" height="65"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4b-TH-F2p">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4b-TH-F2p">
                                             <rect key="frame" x="2" y="2" width="306" height="143"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
@@ -2444,7 +2443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDd-pd-mEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3099" y="479"/>
+            <point key="canvasLocation" x="3036" y="479"/>
         </scene>
         <!--Venus View Controller-->
         <scene sceneID="9Kh-ru-ycw">
@@ -3035,10 +3034,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hUo-O5-UZx"/>
-        <segue reference="Lmi-c9-ZRQ"/>
-        <segue reference="VXb-SL-9I6"/>
+        <segue reference="B4E-hy-4Ga"/>
         <segue reference="0ae-jF-TG3"/>
+        <segue reference="iyu-w7-9Dy"/>
+        <segue reference="wUO-i9-fp1"/>
         <segue reference="eef-Jf-qGK"/>
     </inferredMetricsTieBreakers>
 </document>

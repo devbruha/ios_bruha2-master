@@ -20,7 +20,7 @@ class VenusViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStat
     
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     
-    func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
+    /*func transitToMenu(sender: UIScreenEdgePanGestureRecognizer){
         self.performSegueWithIdentifier("GoToMenu", sender: self)
     }
     
@@ -29,7 +29,7 @@ class VenusViewController: UIViewController,ARSPDragDelegate, ARSPVisibilityStat
         self.performSegueWithIdentifier("BackBruha", sender: self)
         
     }
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         self.panelControllerContainer = self.parentViewController as! ARSPContainerController

@@ -18,7 +18,7 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
     
     @IBOutlet weak var lblInfo: UILabel!
     
-    @IBOutlet weak var eventMap: UIButton!
+    
     
     
     
@@ -26,12 +26,6 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
     var locationMarker: GMSMarker!
     
     let locationManager = CLLocationManager()
-    
-    func eventbackTapped(){
-        var storyboard = UIStoryboard(name:"Main",bundle:nil)
-        self.performSegueWithIdentifier("eventMap", sender: self)
-        
-    }
 
     
     override func viewDidLoad() {
@@ -43,9 +37,13 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         locationManager.startUpdatingLocation()
         mapView.delegate = self
         
-        var tgr = UITapGestureRecognizer(target:self , action: Selector("eventbackTapped"))
-        eventMap.addGestureRecognizer(tgr)
-        eventMap.userInteractionEnabled = true
+        //segues back to parent controller
+        if parentViewController == ExploreController(){
+            self.performSegueWithIdentifier("eventMap", sender: self)
+        }
+        else if parentViewController == VenusViewController(){
+            self.performSegueWithIdentifier("venueMap", sender: self)
+        }
 
     }
     override func viewWillAppear(animated: Bool) {
