@@ -31,6 +31,9 @@ class FilterPanelViewController: UIViewController,CalendarViewDelegate{
     }
     func venueTapped(){
         var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        //println(FilterTracker.currentFilter.rawValue)
+        /*FilterTracker.currentFilter = FilterState.Venues
+        println(FilterTracker.currentFilter.rawValue)*/
         self.performSegueWithIdentifier("venue", sender: self)
     }
     

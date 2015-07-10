@@ -18,6 +18,7 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
     
     @IBOutlet weak var lblInfo: UILabel!
     
+    @IBOutlet weak var mapBack: UIButton!
     
     
     
@@ -38,14 +39,46 @@ class MapViewController: UIViewController, TypesTableViewControllerDelegate, CLL
         mapView.delegate = self
         
         //segues back to parent controller
-        if parentViewController == ExploreController(){
-            self.performSegueWithIdentifier("eventMap", sender: self)
+        
+        if let parentVC = self.parentViewController {
+            println("1")
+            
+            if let parentVC = parentVC as? ExploreController {
+                println("2")
+                // parentVC is someViewController
+                var tgr = UITapGestureRecognizer(target:self , action: Selector("mapTapped1"))
+                mapBack.addGestureRecognizer(tgr)
+                mapBack.userInteractionEnabled = true
+            }
+            else if let parentVC = parentVC as? VenusViewController{
+                // parentVC is anotherViewController
+                var tgr = UITapGestureRecognizer(target:self , action: Selector("mapTapped2"))
+                mapBack.addGestureRecognizer(tgr)
+                mapBack.userInteractionEnabled = true
+            }
+        }
+
+        /*if parentViewController == ExploreController(){
+            var tgr = UITapGestureRecognizer(target:self , action: Selector("mapTapped"))
+            mapBack.addGestureRecognizer(tgr)
+            mapBack.userInteractionEnabled = true
         }
         else if parentViewController == VenusViewController(){
             self.performSegueWithIdentifier("venueMap", sender: self)
-        }
-
+        }*/
     }
+    
+    func mapTapped1(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("eventMap", sender: self)
+        
+    }
+    func mapTapped2(){
+        var storyboard = UIStoryboard(name:"Main",bundle:nil)
+        self.performSegueWithIdentifier("venueMap", sender: self)
+        
+    }
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.setNavigationBarItem()

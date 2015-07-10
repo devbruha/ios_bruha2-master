@@ -61,8 +61,14 @@ class ListViewController: UIViewController {
         
         self.presentViewController(slideMenuController, animated: false, completion: nil)*/
         
-        self.performSegueWithIdentifier("ExploreDetails", sender: self)
-        
+        //if( FilterTracker.currentFilter == FilterState.Events){
+            
+            self.performSegueWithIdentifier("ExploreDetails", sender: self)
+        //}
+        //else if(FilterTracker.currentFilter == FilterState.Venues){
+            
+          //  self.performSegueWithIdentifier("venue", sender: self)
+        //}
         
     }
     

@@ -25,6 +25,8 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
     var carName = ["Lamborghini", "Drift", "Ferrari", "Hyundai","Mercedes Benz","Mitsubishi","Nissan","Volkswagen"]
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     
+    var filterState = FilterTracker.currentFilter
+    
 
     func backTapped(){
         var storyboard = UIStoryboard(name:"Main",bundle:nil)
@@ -84,7 +86,7 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
 
         //cell.rightUtilityButtons =
         var temp: NSMutableArray = NSMutableArray()
-        temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "Get Hyped")
+        temp.sw_addUtilityButtonWithColor(UIColor.redColor(),title: "Map")
         cell.leftUtilityButtons = temp as [AnyObject]
 
         
@@ -181,6 +183,8 @@ class ExploreController: UIViewController,ARSPDragDelegate, ARSPVisibilityStateD
         
         switch(index){
             case 0:
+                //map
+                self.performSegueWithIdentifier("GoToMap", sender: self)
                 break
             case 1:
                 break
