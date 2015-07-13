@@ -19,6 +19,8 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var MyTicketsImageView: UIImageView!
     
+    @IBOutlet weak var ProfileImageView: UIImageView!
+    
     @IBOutlet var segmentedControl: UISegmentedControl!
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
@@ -88,6 +90,12 @@ class ListViewController: UIViewController {
         self.performSegueWithIdentifier("myTicket", sender: self)
     }
     
+    func profileTapped(){
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.performSegueWithIdentifier("GoToProfile", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var tgr = UITapGestureRecognizer(target:self , action: Selector("imageTapped"))
@@ -114,6 +122,13 @@ class ListViewController: UIViewController {
         var tgr4 = UITapGestureRecognizer(target: self, action: Selector("addictionTapped"))
         MyAddicImageView.addGestureRecognizer(tgr4)
         MyAddicImageView.userInteractionEnabled = true
+        screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
+        screenEdgeRecognizer.edges = .Left
+        view.addGestureRecognizer(screenEdgeRecognizer)
+        
+        var tgr6 = UITapGestureRecognizer(target: self, action: Selector("profileTapped"))
+        ProfileImageView.addGestureRecognizer(tgr6)
+        ProfileImageView.userInteractionEnabled = true
         screenEdgeRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "transitToMenu:")
         screenEdgeRecognizer.edges = .Left
         view.addGestureRecognizer(screenEdgeRecognizer)

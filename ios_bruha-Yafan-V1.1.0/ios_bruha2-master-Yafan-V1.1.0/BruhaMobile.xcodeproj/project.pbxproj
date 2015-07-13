@@ -35,6 +35,7 @@
 		0AF091AA1B0042F300437ED6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF091A91B0042F300437ED6 /* GooglePlace.swift */; };
 		0AF320521AFC4F0100D26683 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */; };
 		180185D71B4302C00079C006 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180185D61B4302C00079C006 /* CalendarViewController.swift */; };
+		180631B81B53FB0500DD3D14 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180631B71B53FB0500DD3D14 /* MyProfileViewController.swift */; };
 		1832B0DE1B4DA97000D52E2B /* mapFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832B0DD1B4DA97000D52E2B /* mapFilterViewController.swift */; };
 		183CB5651B388C5C007FD211 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5641B388C5C007FD211 /* SignInButton.swift */; };
 		183CB5671B389FAC007FD211 /* SplashIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */; };
@@ -147,6 +148,7 @@
 		0AF091A91B0042F300437ED6 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		0AF320511AFC4F0100D26683 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		180185D61B4302C00079C006 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		180631B71B53FB0500DD3D14 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		1832B0DD1B4DA97000D52E2B /* mapFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapFilterViewController.swift; sourceTree = "<group>"; };
 		183CB5641B388C5C007FD211 /* SignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		183CB5661B389FAC007FD211 /* SplashIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashIntroViewController.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				18BA447B1B4ACEA4004C613C /* My Tickets */,
 				459490231B332EFA004AD490 /* My Addictions */,
 				45375B921B31F72400265987 /* My Uploads */,
+				180631B61B53FAD200DD3D14 /* MyProfile */,
 				4581F05E1B30B13D0035065F /* MapDropDownBox */,
 				18929BCB1B0B821C00779957 /* GoogleMaps */,
 				18950F041B3B15F500CCB46B /* CalendarKit */,
@@ -363,6 +366,14 @@
 				0AB9B4991AF84B7F006A5A6C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		180631B61B53FAD200DD3D14 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				180631B71B53FB0500DD3D14 /* MyProfileViewController.swift */,
+			);
+			name = MyProfile;
 			sourceTree = "<group>";
 		};
 		18929BCB1B0B821C00779957 /* GoogleMaps */ = {
@@ -620,6 +631,7 @@
 				0A8D50C91AF9987600E295F0 /* MapViewController.swift in Sources */,
 				18950F121B3B161900CCB46B /* MonthCollectionCell.swift in Sources */,
 				4531193C1B345E9200E71D6F /* VenusViewController.swift in Sources */,
+				180631B81B53FB0500DD3D14 /* MyProfileViewController.swift in Sources */,
 				4594902D1B334441004AD490 /* AddictionPanelViewController.swift in Sources */,
 				185D94551B39CEFE0021941B /* VenuPanelViewController.swift in Sources */,
 				18929BCD1B0B827500779957 /* TypesTableViewController.swift in Sources */,
